@@ -1,0 +1,506 @@
+ab,cid,name,atc_group1,atc_group2,oral_ddd,oral_units,iv_ddd,iv_units
+AMA,4649.0,4-aminosalicylic acid,Drugs for treatment of tuberculosis,Aminosalicylic acid and derivatives,12.0,g,,
+ACM,6450012.0,Acetylmidecamycin,,,,,,
+ASP,49787020.0,Acetylspiramycin,,,,,,
+ALS,8954.0,Aldesulfone sodium,Drugs for treatment of lepra,Drugs for treatment of lepra,0.33,g,,
+AMK,37768.0,Amikacin,Aminoglycoside antibacterials,Other aminoglycosides,,,1.0,g
+AKF,,Amikacin/fosfomycin,,,,,,
+AMO,54260.0,Amorolfine,Antifungals for topical use,Other antifungals for topical use,,,,
+AMX,33613.0,Amoxicillin,"Beta-lactam antibacterials, penicillins",Penicillins with extended spectrum,1.5,g,3.0,g
+AMC,23665637.0,Amoxicillin/clavulanic acid,"Beta-lactam antibacterials, penicillins","Combinations of penicillins, incl. beta-lactamase inhibitors",1.5,g,3.0,g
+AXS,465441.0,Amoxicillin/sulbactam,,,1.5,g,3.0,g
+AMB,5280965.0,Amphotericin B,Antimycotics for systemic use,Antibiotics,40.0,mg,210.0,mg
+AMH,,Amphotericin B-high,,,,,,
+AMP,6249.0,Ampicillin,"Beta-lactam antibacterials, penicillins",Penicillins with extended spectrum,2.0,g,6.0,g
+SAM,119561.0,Ampicillin/sulbactam,"Beta-lactam antibacterials, penicillins","Combinations of penicillins, incl. beta-lactamase inhibitors",,,6.0,g
+AMR,73341.0,Amprolium,,,,,,
+ANI,166548.0,Anidulafungin,Antimycotics for systemic use,Other antimycotics for systemic use,,,0.1,g
+APL,6602341.0,Apalcillin,,,,,,
+APR,3081545.0,Apramycin,,,,,,
+ARB,68682.0,Arbekacin,,,,,0.2,g
+APX,71961.0,Aspoxicillin,,,,,4.0,g
+AST,5284517.0,Astromicin,,,,,,
+AVB,9835049.0,Avibactam,,,,,,
+AVI,71674.0,Avilamycin,,,,,,
+AVO,16131159.0,Avoparcin,,,,,,
+AZD,15574941.0,Azidocillin,"Beta-lactam antibacterials, penicillins",Beta-lactamase sensitive penicillins,1.5,g,,
+AZM,447043.0,Azithromycin,"Macrolides, lincosamides and streptogramins",Macrolides,0.3,g,0.5,g
+AFC,,Azithromycin/fluconazole/secnidazole,Combinations of antibacterials,Combinations of antibacterials,,,,
+AZL,6479523.0,Azlocillin,"Beta-lactam antibacterials, penicillins",Penicillins with extended spectrum,,,12.0,g
+ATM,5742832.0,Aztreonam,Other beta-lactam antibacterials,Monobactams,,,4.0,g
+AZA,,Aztreonam/avibactam,,,,,,
+ANC,,Aztreonam/nacubactam,,,,,,
+BAM,441397.0,Bacampicillin,"Beta-lactam antibacterials, penicillins",Penicillins with extended spectrum,1.2,g,,
+BAC,78358334.0,Bacitracin,,,,,,
+BDQ,5388906.0,Bedaquiline,,,86.0,mg,,
+BEK,439318.0,Bekanamycin,,,,,0.6,g
+BNB,,Benzathine benzylpenicillin,"Beta-lactam antibacterials, penicillins",Beta-lactamase sensitive penicillins,,,3.6,g
+BNP,64725.0,Benzathine phenoxymethylpenicillin,"Beta-lactam antibacterials, penicillins",Beta-lactamase sensitive penicillins,2.0,g,,
+PEN,5904.0,Benzylpenicillin,Combinations of antibacterials,Combinations of antibacterials,,,3.6,g
+PEN-S,,Benzylpenicillin screening test,,,,,,
+BES,10178705.0,Besifloxacin,,,,,,
+BLA-S,,Beta-lactamase screening test,,,,,,
+BIA,71339.0,Biapenem,,,,,1.2,g
+BCZ,65807.0,Bicyclomycin,,,,,,
+BLM,5360373.0,Bleomycin,,,,,,
+BDP,68760.0,Brodimoprim,Sulfonamides and trimethoprim,Trimethoprim and derivatives,0.2,g,,
+BUT,47472.0,Butoconazole,,,,,,
+CDZ,44242317.0,Cadazolid,,,,,,
+CLA,,Calcium aminosalicylate,Drugs for treatment of tuberculosis,Aminosalicylic acid and derivatives,15.0,g,,
+CAP,135565060.0,Capreomycin,Drugs for treatment of tuberculosis,Antibiotics,,,1.0,g
+CRB,20824.0,Carbenicillin,"Beta-lactam antibacterials, penicillins",Penicillins with extended spectrum,,,12.0,g
+CRN,93184.0,Carindacillin,"Beta-lactam antibacterials, penicillins",Penicillins with extended spectrum,4.0,g,,
+CAR,6540466.0,Carumonam,,,,,2.0,g
+CAS,2826718.0,Caspofungin,Antimycotics for systemic use,Other antimycotics for systemic use,,,50.0,mg
+CAC,91562.0,Cefacetrile,Other beta-lactam antibacterials,First-generation cephalosporins,,,,
+CEC,51039.0,Cefaclor,Other beta-lactam antibacterials,Second-generation cephalosporins,1.0,g,,
+CFR,47965.0,Cefadroxil,Other beta-lactam antibacterials,First-generation cephalosporins,2.0,g,,
+LEX,27447.0,Cefalexin,Other beta-lactam antibacterials,First-generation cephalosporins,2.0,g,,
+RID,5773.0,Cefaloridine,Other beta-lactam antibacterials,First-generation cephalosporins,,,3.0,g
+CEP,6024.0,Cefalotin,Other beta-lactam antibacterials,First-generation cephalosporins,,,4.0,g
+MAN,456255.0,Cefamandole,Other beta-lactam antibacterials,Second-generation cephalosporins,,,6.0,g
+HAP,30699.0,Cefapirin,Other beta-lactam antibacterials,First-generation cephalosporins,,,4.0,g
+CTZ,6410758.0,Cefatrizine,Other beta-lactam antibacterials,First-generation cephalosporins,1.0,g,,
+CZD,71736.0,Cefazedone,Other beta-lactam antibacterials,First-generation cephalosporins,,,3.0,g
+CZO,33255.0,Cefazolin,Other beta-lactam antibacterials,First-generation cephalosporins,,,3.0,g
+CFB,127527.0,Cefbuperazone,,,,,2.0,g
+CCP,6436055.0,Cefcapene,,,0.45,g,,
+CCX,5282438.0,Cefcapene pivoxil,,,,,,
+CDR,6915944.0,Cefdinir,Other beta-lactam antibacterials,Third-generation cephalosporins,0.6,g,,
+DIT,9870843.0,Cefditoren,Other beta-lactam antibacterials,Third-generation cephalosporins,0.4,g,,
+DIX,6437877.0,Cefditoren pivoxil,,,,,,
+FEP,5479537.0,Cefepime,Other beta-lactam antibacterials,Fourth-generation cephalosporins,,,4.0,g
+CFA,,Cefepime/amikacin,Combinations of antibacterials,Combinations of antibacterials,,,,
+CPC,9567559.0,Cefepime/clavulanic acid,,,,,,
+FPE,23653540.0,Cefepime/enmetazobactam,,,,,,
+FNC,,Cefepime/nacubactam,,,,,,
+FTA,,Cefepime/taniborbactam,,,,,,
+FPT,9567558.0,Cefepime/tazobactam,,,,,,
+FPZ,,Cefepime/zidebactam,,,,,,
+CAT,5487888.0,Cefetamet,Other beta-lactam antibacterials,Third-generation cephalosporins,1.0,g,,
+CPI,5486182.0,Cefetamet pivoxil,,,,,,
+CCL,71719688.0,Cefetecol,,,,,,
+CZL,193956.0,Cefetrizole,,,,,,
+FDC,77843966.0,Cefiderocol,,,,,6.0,g
+CFM,5362065.0,Cefixime,Other beta-lactam antibacterials,Third-generation cephalosporins,0.4,g,,
+CEO,,Cefixime/ornidazole,Combinations of antibacterials,Combinations of antibacterials,,,,
+CMX,9570757.0,Cefmenoxime,Other beta-lactam antibacterials,Third-generation cephalosporins,,,2.0,g
+CMZ,42008.0,Cefmetazole,Other beta-lactam antibacterials,Second-generation cephalosporins,,,4.0,g
+CNX,71141.0,Cefminox,,,,,4.0,g
+DIZ,5361871.0,Cefodizime,Other beta-lactam antibacterials,Third-generation cephalosporins,,,2.0,g
+CID,43594.0,Cefonicid,Other beta-lactam antibacterials,Second-generation cephalosporins,,,1.0,g
+CFP,44187.0,Cefoperazone,Other beta-lactam antibacterials,Third-generation cephalosporins,,,4.0,g
+CSL,,Cefoperazone/sulbactam,Other beta-lactam antibacterials,Third-generation cephalosporins,,,4.0,g
+CND,43507.0,Ceforanide,Other beta-lactam antibacterials,Second-generation cephalosporins,,,4.0,g
+CSE,9830519.0,Cefoselis,,,,,,
+CTX,5742673.0,Cefotaxime,Other beta-lactam antibacterials,Third-generation cephalosporins,,,4.0,g
+CTX-S,,Cefotaxime screening test,,,,,,
+CTC,9575353.0,Cefotaxime/clavulanic acid,,,,,,
+CTS,9574753.0,Cefotaxime/sulbactam,,,,,,
+CTT,53025.0,Cefotetan,Other beta-lactam antibacterials,Second-generation cephalosporins,,,4.0,g
+CTF,43708.0,Cefotiam,Other beta-lactam antibacterials,Second-generation cephalosporins,1.2,g,4.0,g
+CHE,125846.0,Cefotiam hexetil,,,,,,
+FOV,9578573.0,Cefovecin,,,,,,
+FOX,441199.0,Cefoxitin,Other beta-lactam antibacterials,Second-generation cephalosporins,,,6.0,g
+FOX-S,,Cefoxitin screening test,,,,,,
+ZOP,9571080.0,Cefozopran,,,,,4.0,g
+CFZ,68597.0,Cefpimizole,,,,,,
+CPM,636405.0,Cefpiramide,Other beta-lactam antibacterials,Third-generation cephalosporins,,,2.0,g
+CPO,5479539.0,Cefpirome,Other beta-lactam antibacterials,Fourth-generation cephalosporins,,,4.0,g
+CPD,6335986.0,Cefpodoxime,Other beta-lactam antibacterials,Third-generation cephalosporins,0.4,g,,
+CPX,6526396.0,Cefpodoxime proxetil,,,,,,
+CDC,,Cefpodoxime/clavulanic acid,,,0.4,g,,
+CPR,5281006.0,Cefprozil,Other beta-lactam antibacterials,Second-generation cephalosporins,1.0,g,,
+CEQ,5464355.0,Cefquinome,,,,,,
+CRD,5284529.0,Cefroxadine,Other beta-lactam antibacterials,First-generation cephalosporins,2.1,g,,
+CFS,656575.0,Cefsulodin,Other beta-lactam antibacterials,Third-generation cephalosporins,,,4.0,g
+CSU,68718.0,Cefsumide,,,,,,
+CPT,56841980.0,Ceftaroline,,,,,,
+CPA,,Ceftaroline/avibactam,,,,,,
+CAZ,5481173.0,Ceftazidime,Other beta-lactam antibacterials,Third-generation cephalosporins,,,4.0,g
+CZA,90643431.0,Ceftazidime/avibactam,,,,,6.0,g
+CCV,9575352.0,Ceftazidime/clavulanic acid,Other beta-lactam antibacterials,Third-generation cephalosporins,,,6.0,g
+CEM,6537431.0,Cefteram,,,0.4,g,,
+CPL,5362114.0,Cefteram pivoxil,,,,,,
+CTL,65755.0,Ceftezole,Other beta-lactam antibacterials,First-generation cephalosporins,,,3.0,g
+CTB,5282242.0,Ceftibuten,Other beta-lactam antibacterials,Third-generation cephalosporins,0.4,g,,
+CTA,,Ceftibuten/avibactam,,,,,,
+TIO,6328657.0,Ceftiofur,,,,,,
+CZX,6533629.0,Ceftizoxime,Other beta-lactam antibacterials,Third-generation cephalosporins,,,4.0,g
+CZP,9578661.0,Ceftizoxime alapivoxil,,,,,,
+BPR,135413542.0,Ceftobiprole,,,,,,
+CFM1,135413544.0,Ceftobiprole medocaril,Other beta-lactam antibacterials,Other cephalosporins and penems,,,1.5,g
+CZT,86291594.0,Ceftolozane/tazobactam,Other beta-lactam antibacterials,Other cephalosporins and penems,,,3.0,g
+CRO,5479530.0,Ceftriaxone,Other beta-lactam antibacterials,Third-generation cephalosporins,,,2.0,g
+CEB,,Ceftriaxone/beta-lactamase inhibitor,Other beta-lactam antibacterials,Third-generation cephalosporins,,,2.0,g
+CXM,5479529.0,Cefuroxime,Other beta-lactam antibacterials,Second-generation cephalosporins,0.5,g,3.0,g
+CXA,6321416.0,Cefuroxime axetil,,,,,,
+CFM2,,Cefuroxime/metronidazole,Combinations of antibacterials,Combinations of antibacterials,0.5,g,,
+ZON,6336505.0,Cefuzonam,,,,,,
+CED,38103.0,Cephradine,Other beta-lactam antibacterials,First-generation cephalosporins,,,,
+CTO,71402.0,Cetocycline,,,,,,
+CHL,5959.0,Chloramphenicol,Amphenicols,Amphenicols,3.0,g,3.0,g
+CTE,54675777.0,Chlortetracycline,Tetracyclines,Tetracyclines,1.0,g,,
+CIC,19003.0,Ciclacillin,,,,,,
+CIX,,Ciclopirox,Antifungals for topical use,Other antifungals for topical use,,,,
+CIN,2762.0,Cinoxacin,Quinolone antibacterials,Other quinolones,1.0,g,,
+CIP,2764.0,Ciprofloxacin,Quinolone antibacterials,Fluoroquinolones,1.0,g,0.8,g
+CIM,,Ciprofloxacin/metronidazole,Combinations of antibacterials,Combinations of antibacterials,,,,
+CIO,,Ciprofloxacin/ornidazole,Combinations of antibacterials,Combinations of antibacterials,,,,
+CIT,,Ciprofloxacin/tinidazole,Combinations of antibacterials,Combinations of antibacterials,,,,
+CLR,84029.0,Clarithromycin,"Macrolides, lincosamides and streptogramins",Macrolides,0.5,g,1.0,g
+CLA1,5280980.0,Clavulanic acid,,,,,,
+CLX,60063.0,Clinafloxacin,,,,,,
+CLI,446598.0,Clindamycin,"Macrolides, lincosamides and streptogramins",Lincosamides,1.2,g,1.8,g
+CLI-S,,Clindamycin inducible screening test,,,,,,
+CLF,2794.0,Clofazimine,Drugs for treatment of lepra,Drugs for treatment of lepra,0.1,g,,
+CLF1,2799.0,Clofoctol,Other antibacterials,Other antibacterials,,,,
+CLM,71807.0,Clometocillin,"Beta-lactam antibacterials, penicillins",Beta-lactamase sensitive penicillins,1.0,g,,
+CLM1,54680675.0,Clomocycline,Tetracyclines,Tetracyclines,1.0,g,,
+CLB,54706138.0,Clorobiocin,,,,,,
+CTR,2812.0,Clotrimazole,,,,,,
+CLO,6098.0,Cloxacillin,"Beta-lactam antibacterials, penicillins",Beta-lactamase resistant penicillins,2.0,g,2.0,g
+COL,5311054.0,Colistin,Other antibacterials,Polymyxins,9.0,MU,9.0,MU
+COP,,Colistin/polysorbate,,,,,,
+CYC,6234.0,Cycloserine,Drugs for treatment of tuberculosis,Antibiotics,0.75,g,,
+DAL,23724878.0,Dalbavancin,Other antibacterials,Glycopeptide antibacterials,,,1.5,g
+DAN,71335.0,Danofloxacin,,,,,,
+DPS,2955.0,Dapsone,Drugs for treatment of lepra,Drugs for treatment of lepra,50.0,mg,,
+DAP,16134395.0,Daptomycin,Other antibacterials,Other antibacterials,,,0.28,g
+DFX,487101.0,Delafloxacin,,,0.9,g,0.6,g
+DLM,6480466.0,Delamanid,Drugs for treatment of tuberculosis,Other drugs for treatment of tuberculosis,0.2,g,,
+DEM,54680690.0,Demeclocycline,Tetracyclines,Tetracyclines,0.6,g,,
+DKB,470999.0,Dibekacin,Aminoglycoside antibacterials,Other aminoglycosides,,,0.14,g
+DIC,18381.0,Dicloxacillin,"Beta-lactam antibacterials, penicillins",Beta-lactamase resistant penicillins,2.0,g,2.0,g
+DIF,56206.0,Difloxacin,,,,,,
+DIR,6473883.0,Dirithromycin,"Macrolides, lincosamides and streptogramins",Macrolides,0.5,g,,
+DOR,73303.0,Doripenem,Other beta-lactam antibacterials,Carbapenems,,,1.5,g
+DOX,54671203.0,Doxycycline,Tetracyclines,Tetracyclines,0.1,g,0.1,g
+ECO,3198.0,Econazole,Antifungals for topical use,Imidazole and triazole derivatives,,,,
+EFF,,Efflux,,,,,,
+ENX,3229.0,Enoxacin,Quinolone antibacterials,Fluoroquinolones,0.8,g,,
+ENR,71188.0,Enrofloxacin,,,,,,
+ENV,135565326.0,Enviomycin,,,,,1.0,g
+EPE,,Eperozolid,,,,,,
+EPC,71392.0,Epicillin,"Beta-lactam antibacterials, penicillins",Penicillins with extended spectrum,2.0,g,2.0,g
+EPP,68916.0,Epiroprim,,,,,,
+ERV,54726192.0,Eravacycline,Tetracyclines,Tetracyclines,,,0.14,g
+ETP,150610.0,Ertapenem,Other beta-lactam antibacterials,Carbapenems,,,1.0,g
+ERY,12560.0,Erythromycin,"Macrolides, lincosamides and streptogramins",Macrolides,2.0,g,1.0,g
+ETH,14052.0,Ethambutol,Drugs for treatment of tuberculosis,Other drugs for treatment of tuberculosis,1.2,g,1.2,g
+ETI,456476.0,Ethambutol/isoniazid,Drugs for treatment of tuberculosis,Combinations of drugs for treatment of tuberculosis,,,,
+ETI1,2761171.0,Ethionamide,Drugs for treatment of tuberculosis,Thiocarbamide derivatives,0.75,g,,
+ETO,6034.0,Ethopabate,,,,,,
+EXE,,Exebacase,,,,,,
+FAR,65894.0,Faropenem,Other beta-lactam antibacterials,Other cephalosporins and penems,0.75,g,,
+FDX,10034073.0,Fidaxomicin,,,0.4,g,,
+FIN,11567473.0,Finafloxacin,,,,,,
+FLA,46783781.0,Flavomycin,,,,,,
+FLE,3357.0,Fleroxacin,Quinolone antibacterials,Fluoroquinolones,0.4,g,0.4,g
+FLO,65864.0,Flomoxef,,,,,2.0,g
+FLR,114811.0,Florfenicol,,,,,,
+FLC,21319.0,Flucloxacillin,"Beta-lactam antibacterials, penicillins",Beta-lactamase resistant penicillins,2.0,g,2.0,g
+FLU,3365.0,Fluconazole,Antimycotics for systemic use,Triazole derivatives,0.2,g,0.2,g
+FCT,3366.0,Flucytosine,Antifungals for topical use,Other antifungals for topical use,10.0,g,10.0,g
+FLM,3374.0,Flumequine,Quinolone antibacterials,Other quinolones,1.2,g,,
+FLR1,71260.0,Flurithromycin,"Macrolides, lincosamides and streptogramins",Macrolides,0.75,g,,
+FFL,214356.0,Fosfluconazole,,,,,,
+FOS,446987.0,Fosfomycin,Other antibacterials,Other antibacterials,3.0,g,8.0,g
+FMD,572.0,Fosmidomycin,,,,,,
+FRM,8378.0,Framycetin,,,,,,
+FUR,6870646.0,Furazidin,Other antibacterials,Nitrofuran derivatives,0.3,g,,
+FRZ,5323714.0,Furazolidone,,,,,,
+FUS,3000226.0,Fusidic acid,Other antibacterials,Steroid antibacterials,1.5,g,1.5,g
+GAM,59364992.0,Gamithromycin,,,,,,
+GRN,124093.0,Garenoxacin,,,0.4,g,,
+GAT,5379.0,Gatifloxacin,Quinolone antibacterials,Fluoroquinolones,0.4,g,0.4,g
+GEM,9571107.0,Gemifloxacin,Quinolone antibacterials,Fluoroquinolones,0.32,g,0.2,g
+GEN,3467.0,Gentamicin,Aminoglycoside antibacterials,Other aminoglycosides,,,0.24,g
+GEH,,Gentamicin-high,,,,,,
+GEP,25101874.0,Gepotidacin,,,,,,
+GRX,72474.0,Grepafloxacin,Quinolone antibacterials,Fluoroquinolones,0.4,g,,
+GRI,441140.0,Griseofulvin,,,0.5,g,,
+HAB,175989.0,Habekacin,,,,,,
+HCH,11979956.0,Hachimycin,Antimycotics for systemic use,Antibiotics,,,,
+HET,443387.0,Hetacillin,"Beta-lactam antibacterials, penicillins",Penicillins with extended spectrum,2.0,g,,
+HYG,56928061.0,Hygromycin,,,,,,
+IBX,,Ibrexafungerp,,,,,,
+ICL,213043.0,Iclaprim,,,,,,
+IPM,104838.0,Imipenem,Other beta-lactam antibacterials,Carbapenems,,,2.0,g
+IPE,,Imipenem/EDTA,,,,,,
+IMR,,Imipenem/relebactam,,,,,2.0,g
+ISV,6918485.0,Isavuconazole,,,0.2,g,0.2,g
+ISE,3037209.0,Isepamicin,Aminoglycoside antibacterials,Other aminoglycosides,,,0.4,g
+ISO,3760.0,Isoconazole,Antimycotics for topic use,Triazole derivatives,,,,
+INH,3767.0,Isoniazid,Drugs for treatment of tuberculosis,Hydrazides,0.3,g,0.3,g
+IST,,Isoniazid/sulfamethoxazole/trimethoprim/pyridoxine,Drugs for treatment of tuberculosis,Combinations of drugs for treatment of tuberculosis,,,,
+ITR,3793.0,Itraconazole,Antimycotics for systemic use,Triazole derivatives,0.2,g,0.2,g
+JOS,5282165.0,Josamycin,"Macrolides, lincosamides and streptogramins",Macrolides,2.0,g,,
+KAN,6032.0,Kanamycin,Aminoglycoside antibacterials,Other aminoglycosides,3.0,g,1.0,g
+KAH,,Kanamycin-high,,,,,,
+KAC,,Kanamycin/cephalexin,,,,,,
+KAS,65174.0,Kasugamycin,,,,,,
+KET,456201.0,Ketoconazole,Antimycotics for systemic use,Imidazole derivatives,0.6,g,,
+KIT,,Kitasamycin,,,,,,
+LAS,5360807.0,Lasalocid,,,,,,
+LSC,71528768.0,Lascufloxacin,Quinolone antibacterials,Fluoroquinolones,75.0,mg,,
+LTM,47499.0,Latamoxef,Other beta-lactam antibacterials,Third-generation cephalosporins,,,4.0,g
+LMU,25185057.0,Lefamulin,,,,,,
+LEN,65646.0,Lenampicillin,,,,,,
+LVX,149096.0,Levofloxacin,Quinolone antibacterials,Fluoroquinolones,0.5,g,0.5,g
+LEO,,Levofloxacin/ornidazole,Combinations of antibacterials,Combinations of antibacterials,,,,
+LND,9850038.0,Levonadifloxacin,,,,,,
+LSP,,Linco-spectin,,,,,,
+LIN,3000540.0,Lincomycin,"Macrolides, lincosamides and streptogramins",Lincosamides,1.8,g,1.8,g
+LNZ,441401.0,Linezolid,Other antibacterials,Other antibacterials,1.2,g,1.2,g
+LFE,,Linoprist-flopristin,,,,,,
+LOM,3948.0,Lomefloxacin,Quinolone antibacterials,Fluoroquinolones,0.4,g,,
+LOR,5284585.0,Loracarbef,Other beta-lactam antibacterials,Second-generation cephalosporins,0.6,g,,
+LYM,54707177.0,Lymecycline,Tetracyclines,Tetracyclines,0.6,g,0.6,g
+MNA,1292.0,Mandelic acid,Other antibacterials,Other antibacterials,12.0,g,,
+MGX,,Manogepix,,,,,,
+MAR,60651.0,Marbofloxacin,,,,,,
+MEC,36273.0,Mecillinam,"Beta-lactam antibacterials, penicillins",Penicillins with extended spectrum,,,1.2,g
+MEL,71306732.0,Meleumycin,,,,,,
+MEM,441130.0,Meropenem,Other beta-lactam antibacterials,Carbapenems,,,3.0,g
+MNC,,Meropenem/nacubactam,,,,,,
+MEV,,Meropenem/vaborbactam,Other beta-lactam antibacterials,Carbapenems,,,3.0,g
+MES,176886.0,Mesulfamide,,,,,,
+MTC,54675785.0,Metacycline,Tetracyclines,Tetracyclines,0.6,g,,
+MTM,6713928.0,Metampicillin,"Beta-lactam antibacterials, penicillins",Penicillins with extended spectrum,1.5,g,1.5,g
+MTH,4101.0,Methenamine,Other antibacterials,Other antibacterials,3.0,g,,
+MET,6087.0,Meticillin,"Beta-lactam antibacterials, penicillins",Beta-lactamase resistant penicillins,,,4.0,g
+MTP,68590.0,Metioprim,,,,,,
+MXT,3047729.0,Metioxate,,,,,,
+MTR,4173.0,Metronidazole,Other antibacterials,Imidazole derivatives,2.0,g,1.5,g
+MEZ,656511.0,Mezlocillin,"Beta-lactam antibacterials, penicillins",Penicillins with extended spectrum,,,6.0,g
+MSU,,Mezlocillin/sulbactam,,,,,,
+MIF,477468.0,Micafungin,Antimycotics for systemic use,Other antimycotics for systemic use,,,0.1,g
+MCZ,4189.0,Miconazole,Antimycotics for systemic use,Imidazole derivatives,0.2,g,1.0,g
+MCR,3037206.0,Micronomicin,,,,,,
+MID,5282169.0,Midecamycin,"Macrolides, lincosamides and streptogramins",Macrolides,1.2,g,1.0,g
+MIL,37614.0,Miloxacin,,,,,,
+MNO,54675783.0,Minocycline,Tetracyclines,Tetracyclines,1.0,mg,0.2,g
+MCM,5282188.0,Miocamycin,"Macrolides, lincosamides and streptogramins",Macrolides,1.2,g,,
+MON,23667299.0,Monensin sodium,,,,,,
+MRN,70374.0,Morinamide,Drugs for treatment of tuberculosis,Other drugs for treatment of tuberculosis,,,,
+MFX,152946.0,Moxifloxacin,Quinolone antibacterials,Fluoroquinolones,0.4,g,0.4,g
+MUP,446596.0,Mupirocin,,,,,,
+NAC,73386748.0,Nacubactam,,,,,,
+NAD,4410.0,Nadifloxacin,,,,,,
+NAF,8982.0,Nafcillin,,,,,3.0,g
+ZWK,117587595.0,Nafithromycin,,,,,,
+NAL,4421.0,Nalidixic acid,Quinolone antibacterials,Other quinolones,4.0,g,,
+NAL-S,,Nalidixic acid screening test,,,,,,
+NAR,65452.0,Narasin,,,,,,
+NEM,11993740.0,Nemonoxacin,Quinolone antibacterials,Other quinolones,,,,
+NEO,,Neomycin,Aminoglycoside antibacterials,Other aminoglycosides,5.0,g,1.0,g
+NET,441306.0,Netilmicin,Aminoglycoside antibacterials,Other aminoglycosides,0.35,g,0.35,g
+NIC,9507.0,Nicarbazin,,,,,,
+NIF,71946.0,Nifuroquine,,,,,,
+NFR,9571062.0,Nifurtoinol,Other antibacterials,Nitrofuran derivatives,0.16,g,,
+NTZ,41684.0,Nitazoxanide,,,1.0,g,,
+NIT,6604200.0,Nitrofurantoin,Other antibacterials,Nitrofuran derivatives,0.2,g,,
+NIZ,5447130.0,Nitrofurazone,,,,,,
+NTR,19910.0,Nitroxoline,Other antibacterials,Other antibacterials,1.0,g,,
+NOR,4539.0,Norfloxacin,Quinolone antibacterials,Fluoroquinolones,0.8,g,,
+NOR-S,,Norfloxacin screening test,,,,,,
+NME,,Norfloxacin/metronidazole,Combinations of antibacterials,Combinations of antibacterials,,,,
+NTI,,Norfloxacin/tinidazole,Combinations of antibacterials,Combinations of antibacterials,,,,
+NVA,10419027.0,Norvancomycin,,,,,,
+NOV,54675769.0,Novobiocin,,,,,,
+NYS,6433272.0,Nystatin,,,1.5,MU,,
+OFX,4583.0,Ofloxacin,Quinolone antibacterials,Fluoroquinolones,0.4,g,0.4,g
+OOR,,Ofloxacin/ornidazole,Combinations of antibacterials,Combinations of antibacterials,,,,
+OLE,72493.0,Oleandomycin,"Macrolides, lincosamides and streptogramins",Macrolides,1.0,g,,
+OMC,54697325.0,Omadacycline,,,0.3,g,0.1,g
+OPT,87880.0,Optochin,,,,,,
+ORB,60605.0,Orbifloxacin,,,,,,
+ORI,16136912.0,Oritavancin,Other antibacterials,Glycopeptide antibacterials,,,,
+ORS,,Ormetroprim/sulfamethoxazole,,,,,,
+ORN,28061.0,Ornidazole,Other antibacterials,Imidazole derivatives,1.5,g,1.0,g
+OST,11136668.0,Ostreogrycin,,,,,,
+OTE,77050711.0,Oteseconazole,Antimycotics for systemic use,Triazole derivatives,21.0,mg,,
+OXA,6196.0,Oxacillin,"Beta-lactam antibacterials, penicillins",Beta-lactamase resistant penicillins,2.0,g,2.0,g
+OXA-S,,Oxacillin screening test,,,,,,
+OXO,4628.0,Oxolinic acid,Quinolone antibacterials,Other quinolones,1.0,g,,
+OXY,54675779.0,Oxytetracycline,Tetracyclines,Tetracyclines,1.0,g,1.0,g
+OZN,,Ozenoxacin,,,,,,
+PAS,,P-aminosalicylic acid,,,,,,
+PAN,72015.0,Panipenem,,,,,,
+PAR,165580.0,Paromomycin,,,3.0,g,,
+PAZ,65957.0,Pazufloxacin,Quinolone antibacterials,Fluoroquinolones,,,1.0,g
+PEF,51081.0,Pefloxacin,Quinolone antibacterials,Fluoroquinolones,0.8,g,0.8,g
+PEF-S,,Pefloxacin screening test,,,,,,
+PNM,10250769.0,Penamecillin,"Beta-lactam antibacterials, penicillins",Beta-lactamase sensitive penicillins,1.05,g,,
+PNO,,Penicillin/novobiocin,,,,,,
+PSU,,Penicillin/sulbactam,,,,,,
+PNM1,54686187.0,Penimepicycline,Tetracyclines,Tetracyclines,,,,
+PIM,65453.0,Pentisomicin,,,,,,
+PTZ,55250256.0,Pentizidone,,,,,,
+PEX,16132253.0,Pexiganan,,,,,,
+PHE,272833.0,Pheneticillin,"Beta-lactam antibacterials, penicillins",Beta-lactamase sensitive penicillins,1.0,g,,
+PHN,6869.0,Phenoxymethylpenicillin,"Beta-lactam antibacterials, penicillins",Beta-lactamase sensitive penicillins,2.0,g,,
+PMR,5284447.0,Pimaricin,,,,,,
+PPA,4831.0,Pipemidic acid,Quinolone antibacterials,Other quinolones,0.8,g,,
+PIP,43672.0,Piperacillin,"Beta-lactam antibacterials, penicillins",Penicillins with extended spectrum,,,14.0,g
+PIS,,Piperacillin/sulbactam,,,,,14.0,g
+TZP,461573.0,Piperacillin/tazobactam,"Beta-lactam antibacterials, penicillins","Combinations of penicillins, incl. beta-lactamase inhibitors",,,14.0,g
+PRC,71978.0,Piridicillin,,,,,,
+PRL,157385.0,Pirlimycin,,,,,,
+PIR,4855.0,Piromidic acid,Quinolone antibacterials,Other quinolones,2.0,g,,
+PVM,33478.0,Pivampicillin,"Beta-lactam antibacterials, penicillins",Penicillins with extended spectrum,1.05,g,,
+PME,115163.0,Pivmecillinam,"Beta-lactam antibacterials, penicillins",Penicillins with extended spectrum,0.6,g,,
+PLZ,42613186.0,Plazomicin,,,,,,
+PLB,49800004.0,Polymyxin B,Other antibacterials,Polymyxins,3.0,MU,0.15,g
+POP,,Polymyxin B/polysorbate 80,,,,,,
+POS,468595.0,Posaconazole,Antimycotics for systemic use,Triazole derivatives,0.3,g,0.3,g
+PRA,9802884.0,Pradofloxacin,,,,,,
+PRX,71455.0,Premafloxacin,,,,,,
+PMD,456199.0,Pretomanid,Drugs for treatment of tuberculosis,Other drugs for treatment of tuberculosis,0.2,g,,
+PRM,6446787.0,Primycin,,,,,,
+PRI,11979535.0,Pristinamycin,"Macrolides, lincosamides and streptogramins",Streptogramins,2.0,g,,
+PRB,5903.0,Procaine benzylpenicillin,"Beta-lactam antibacterials, penicillins",Beta-lactamase sensitive penicillins,,,0.6,g
+PRP,92879.0,Propicillin,"Beta-lactam antibacterials, penicillins",Beta-lactamase sensitive penicillins,0.9,g,,
+PKA,9872451.0,Propikacin,,,,,,
+PTH,666418.0,Protionamide,Drugs for treatment of tuberculosis,Thiocarbamide derivatives,0.75,g,,
+PRU,65947.0,Prulifloxacin,Quinolone antibacterials,Fluoroquinolones,0.6,g,,
+PZA,1046.0,Pyrazinamide,Drugs for treatment of tuberculosis,Other drugs for treatment of tuberculosis,1.5,g,,
+QDA,11979418.0,Quinupristin/dalfopristin,"Macrolides, lincosamides and streptogramins",Streptogramins,,,,
+RAC,56052.0,Ractopamine,,,,,,
+RAM,16132338.0,Ramoplanin,,,,,,
+RZM,10993211.0,Razupenem,,,,,,
+RTP,6918462.0,Retapamulin,Antibiotics for topical use,Other antibiotics for topical use,,,,
+RZF,,Rezafungin,,,,,,
+RBC,44631912.0,Ribociclib,Antimycotics for systemic use,Triazole derivatives,0.45,g,,
+RST,33042.0,Ribostamycin,Aminoglycoside antibacterials,Other aminoglycosides,,,1.0,g
+RID1,16659285.0,Ridinilazole,,,,,,
+RIB,135398743.0,Rifabutin,Drugs for treatment of tuberculosis,Antibiotics,0.15,g,,
+RIF,135398735.0,Rifampicin,Drugs for treatment of tuberculosis,Antibiotics,0.6,g,0.6,g
+REI,135483893.0,Rifampicin/ethambutol/isoniazid,Drugs for treatment of tuberculosis,Combinations of drugs for treatment of tuberculosis,,,,
+RFI,,Rifampicin/isoniazid,Drugs for treatment of tuberculosis,Combinations of drugs for treatment of tuberculosis,,,,
+RPEI,,Rifampicin/pyrazinamide/ethambutol/isoniazid,Drugs for treatment of tuberculosis,Combinations of drugs for treatment of tuberculosis,,,,
+RPI,,Rifampicin/pyrazinamide/isoniazid,Drugs for treatment of tuberculosis,Combinations of drugs for treatment of tuberculosis,,,,
+RFM,6324616.0,Rifamycin,Drugs for treatment of tuberculosis,Antibiotics,0.8,g,0.6,g
+RFP,135403821.0,Rifapentine,Drugs for treatment of tuberculosis,Antibiotics,0.11,g,,
+RFX,6436173.0,Rifaximin,Intestinal antiinfectives,Antibiotics,0.6,g,,
+RIT,65633.0,Ritipenem,,,,,,
+RIA,163692.0,Ritipenem acoxil,,,,,,
+ROK,5282211.0,Rokitamycin,"Macrolides, lincosamides and streptogramins",Macrolides,0.8,g,,
+RLT,54682938.0,Rolitetracycline,Tetracyclines,Tetracyclines,,,0.35,g
+ROS,287180.0,Rosoxacin,Quinolone antibacterials,Other quinolones,0.3,g,,
+RXT,,Roxithromycin,"Macrolides, lincosamides and streptogramins",Macrolides,0.3,g,,
+RFL,58258.0,Rufloxacin,Quinolone antibacterials,Fluoroquinolones,0.2,g,,
+SAL,3085092.0,Salinomycin,,,,,,
+SAR,56208.0,Sarafloxacin,,,,,,
+SRC,54681908.0,Sarecycline,Tetracyclines,Tetracyclines,0.1,g,,
+SRX,9933415.0,Sarmoxicillin,,,,,,
+SEC,71815.0,Secnidazole,,,2.0,g,,
+SIS,36119.0,Sisomicin,Aminoglycoside antibacterials,Other aminoglycosides,,,0.24,g
+SIT,461399.0,Sitafloxacin,,,0.1,g,,
+SDA,2724368.0,Sodium aminosalicylate,Drugs for treatment of tuberculosis,Aminosalicylic acid and derivatives,14.0,g,14.0,g
+SOL,25242512.0,Solithromycin,,,,,,
+SPX,60464.0,Sparfloxacin,Quinolone antibacterials,Fluoroquinolones,0.2,g,,
+SPT,15541.0,Spectinomycin,Other antibacterials,Other antibacterials,,,3.0,g
+SPI,6419898.0,Spiramycin,"Macrolides, lincosamides and streptogramins",Macrolides,3.0,g,,
+SPM,,Spiramycin/metronidazole,Combinations of antibacterials,Combinations of antibacterials,,,,
+STR,,Streptoduocin,Aminoglycoside antibacterials,Streptomycins,,,1.0,g
+STR1,19649.0,Streptomycin,Aminoglycoside antibacterials,Streptomycins,,,1.0,g
+STH,,Streptomycin-high,,,,,,
+STI,,Streptomycin/isoniazid,Drugs for treatment of tuberculosis,Combinations of drugs for treatment of tuberculosis,,,,
+SUL,130313.0,Sulbactam,"Beta-lactam antibacterials, penicillins",Beta-lactamase inhibitors,,,1.0,g
+SBC,20055036.0,Sulbenicillin,"Beta-lactam antibacterials, penicillins",Penicillins with extended spectrum,,,15.0,g
+SUC,5318.0,Sulconazole,,,,,,
+SUP,6634.0,Sulfachlorpyridazine,,,,,,
+SDI,5215.0,Sulfadiazine,Sulfonamides and trimethoprim,Intermediate-acting sulfonamides,0.6,g,,
+SLT,122284.0,Sulfadiazine/tetroxoprim,Sulfonamides and trimethoprim,"Combinations of sulfonamides and trimethoprim, incl. derivatives",,,,
+SLT1,64932.0,Sulfadiazine/trimethoprim,Sulfonamides and trimethoprim,"Combinations of sulfonamides and trimethoprim, incl. derivatives",,,,
+SUD,5323.0,Sulfadimethoxine,Sulfonamides and trimethoprim,Long-acting sulfonamides,0.5,g,,
+SDM,5327.0,Sulfadimidine,Sulfonamides and trimethoprim,Short-acting sulfonamides,4.0,g,,
+SLT2,,Sulfadimidine/trimethoprim,Sulfonamides and trimethoprim,"Combinations of sulfonamides and trimethoprim, incl. derivatives",,,,
+SLF,5344.0,Sulfafurazole,Sulfonamides and trimethoprim,Short-acting sulfonamides,4.0,g,4.0,g
+SLF1,5343.0,Sulfaisodimidine,Sulfonamides and trimethoprim,Short-acting sulfonamides,4.0,g,4.0,g
+SLF2,9047.0,Sulfalene,Sulfonamides and trimethoprim,Long-acting sulfonamides,0.1,g,,
+SZO,187764.0,Sulfamazone,Sulfonamides and trimethoprim,Long-acting sulfonamides,1.5,g,,
+SLF3,5325.0,Sulfamerazine,Sulfonamides and trimethoprim,Long-acting sulfonamides,3.0,g,,
+SLT3,,Sulfamerazine/trimethoprim,Sulfonamides and trimethoprim,"Combinations of sulfonamides and trimethoprim, incl. derivatives",,,,
+SUM,,Sulfamethazine,,,,,,
+SLF4,5328.0,Sulfamethizole,Sulfonamides and trimethoprim,Short-acting sulfonamides,4.0,g,,
+SMX,5329.0,Sulfamethoxazole,Sulfonamides and trimethoprim,Intermediate-acting sulfonamides,2.0,g,,
+SLF5,5330.0,Sulfamethoxypyridazine,Sulfonamides and trimethoprim,Long-acting sulfonamides,0.5,g,,
+SLF6,19596.0,Sulfametomidine,Sulfonamides and trimethoprim,Long-acting sulfonamides,,,,
+SLF7,5326.0,Sulfametoxydiazine,Sulfonamides and trimethoprim,Long-acting sulfonamides,0.5,g,,
+SLT4,,Sulfametrole/trimethoprim,Sulfonamides and trimethoprim,"Combinations of sulfonamides and trimethoprim, incl. derivatives",,,,
+SLF8,12894.0,Sulfamoxole,Sulfonamides and trimethoprim,Intermediate-acting sulfonamides,1.0,g,1.0,g
+SLT5,,Sulfamoxole/trimethoprim,Sulfonamides and trimethoprim,"Combinations of sulfonamides and trimethoprim, incl. derivatives",,,,
+SLF9,5333.0,Sulfanilamide,Sulfonamides and trimethoprim,Short-acting sulfonamides,,,,
+SLF10,68933.0,Sulfaperin,Sulfonamides and trimethoprim,Long-acting sulfonamides,0.5,g,,
+SLF11,5335.0,Sulfaphenazole,Sulfonamides and trimethoprim,Long-acting sulfonamides,1.0,g,,
+SLF12,5336.0,Sulfapyridine,Sulfonamides and trimethoprim,Short-acting sulfonamides,1.0,g,,
+SNA,60582.0,Sulfasuccinamide,,,,,,
+SUT,5340.0,Sulfathiazole,Sulfonamides and trimethoprim,Short-acting sulfonamides,,,,
+SLF13,3000579.0,Sulfathiourea,Sulfonamides and trimethoprim,Short-acting sulfonamides,6.0,g,,
+SOX,,Sulfisoxazole,,,,,,
+SSS,86225.0,Sulfonamide,,,,,,
+SLP,9950244.0,Sulopenem,,,,,,
+SLT6,444022.0,Sultamicillin,"Beta-lactam antibacterials, penicillins","Combinations of penicillins, incl. beta-lactamase inhibitors",1.5,g,,
+SUR,46700778.0,Surotomycin,,,,,,
+TAL,71447.0,Talampicillin,"Beta-lactam antibacterials, penicillins",Penicillins with extended spectrum,2.0,g,,
+TLP,163307.0,Talmetoprim,,,,,,
+TAN,76902493.0,Taniborbactam,,,,,,
+TAZ,123630.0,Tazobactam,"Beta-lactam antibacterials, penicillins",Beta-lactamase inhibitors,,,,
+TBP,9800194.0,Tebipenem,,,,,,
+TZD,11234049.0,Tedizolid,Other antibacterials,Other antibacterials,0.2,g,0.2,g
+TEC,16131923.0,Teicoplanin,Other antibacterials,Glycopeptide antibacterials,,,0.4,g
+TCM,,Teicoplanin-macromethod,,,,,,
+TLV,3081362.0,Telavancin,Other antibacterials,Glycopeptide antibacterials,,,,
+TLT,3002190.0,Telithromycin,"Macrolides, lincosamides and streptogramins",Macrolides,0.8,g,,
+TMX,60021.0,Temafloxacin,Quinolone antibacterials,Fluoroquinolones,0.8,g,,
+TEM,171758.0,Temocillin,"Beta-lactam antibacterials, penicillins",Penicillins with extended spectrum,,,4.0,g
+TRB,1549008.0,Terbinafine,Antifungals for systemic use,Antifungals for systemic use,0.25,g,,
+TRC,441383.0,Terconazole,,,,,,
+TRZ,65720.0,Terizidone,Drugs for treatment of tuberculosis,Other drugs for treatment of tuberculosis,,,,
+TCY,54675776.0,Tetracycline,Tetracyclines,Tetracyclines,1.0,g,1.0,g
+TCY-S,,Tetracycline screening test,,,,,,
+TOL,54691494.0,Tetracycline/oleandomycin,Combinations of antibacterials,Combinations of antibacterials,,,,
+TET,65450.0,Tetroxoprim,,,,,,
+THA,9568512.0,Thiacetazone,,,,,,
+THI,27200.0,Thiamphenicol,Amphenicols,Amphenicols,1.5,g,1.5,g
+TAT,,Thioacetazone,Drugs for treatment of tuberculosis,Other drugs for treatment of tuberculosis,,,,
+THI1,,Thioacetazone/isoniazid,Drugs for treatment of tuberculosis,Combinations of drugs for treatment of tuberculosis,,,,
+THS,16129666.0,Thiostrepton,,,,,,
+TIA,656958.0,Tiamulin,,,,,,
+TIC,36921.0,Ticarcillin,"Beta-lactam antibacterials, penicillins",Penicillins with extended spectrum,,,15.0,g
+TCC,6437075.0,Ticarcillin/clavulanic acid,"Beta-lactam antibacterials, penicillins","Combinations of penicillins, incl. beta-lactamase inhibitors",,,15.0,g
+TGC,54686904.0,Tigecycline,Tetracyclines,Tetracyclines,,,0.1,g
+TMN,,Tigemonam,,,,,,
+TBQ,65592.0,Tilbroquinol,,,,,,
+TIP,24860548.0,Tildipirosin,,,,,,
+TIL,5282521.0,Tilmicosin,,,,,,
+TIN,5479.0,Tinidazole,Other antibacterials,Imidazole derivatives,2.0,g,1.5,g
+TCR,3001386.0,Tiocarlide,Drugs for treatment of tuberculosis,Thiocarbamide derivatives,7.0,g,,
+TDC,10247721.0,Tiodonium chloride,,,,,,
+TXC,65788.0,Tioxacin,,,,,,
+TIZ,394397.0,Tizoxanide,,,,,,
+TOB,36294.0,Tobramycin,Aminoglycoside antibacterials,Other aminoglycosides,,,0.24,g
+TOH,,Tobramycin-high,,,,,,
+TFX,5517.0,Tosufloxacin,,,0.45,g,,
+TMP,5578.0,Trimethoprim,Sulfonamides and trimethoprim,Trimethoprim and derivatives,0.4,g,0.4,g
+SXT,358641.0,Trimethoprim/sulfamethoxazole,Sulfonamides and trimethoprim,"Combinations of sulfonamides and trimethoprim, incl. derivatives",,,,
+TRL,202225.0,Troleandomycin,"Macrolides, lincosamides and streptogramins",Macrolides,1.0,g,,
+TRO,55886.0,Trospectomycin,,,,,,
+TVA,62959.0,Trovafloxacin,Quinolone antibacterials,Fluoroquinolones,0.2,g,0.2,g
+TUL,9832301.0,Tulathromycin,,,,,,
+TYL,5280440.0,Tylosin,,,,,,
+TYL1,6441094.0,Tylvalosin,,,,,,
+PRU1,124225.0,Ulifloxacin (Prulifloxacin),,,,,,
+VAN,14969.0,Vancomycin,Other antibacterials,Glycopeptide antibacterials,2.0,g,2.0,g
+VAM,,Vancomycin-macromethod,,,,,,
+VIO,135398671.0,Viomycin,,,,,,
+VIR,,Virginiamycine,,,,,,
+VOR,71616.0,Voriconazole,Antimycotics for systemic use,Triazole derivatives,0.4,g,0.4,g
+XER,140830474.0,Xeruborbactam,,,,,,
+XBR,72144.0,Xibornol,Other antibacterials,Other antibacterials,,,,
+ZID,77846445.0,Zidebactam,,,,,,
+ZFD,76685216.0,Zoliflodacin,,,,,,
+ZOR,70697970.0,Zorbamycin,,,,,,
