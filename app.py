@@ -605,6 +605,78 @@ def load_amr_breakpoints() -> pd.DataFrame | None:
         return pd.read_csv(path, low_memory=False)
     return None
 
+@st.cache_data
+def load_nih_susceptibility() -> pd.DataFrame | None:
+    path = "data/nih_susceptibility_summary.csv"
+    if os.path.exists(path):
+        return pd.read_csv(path)
+    return None
+
+# Mapping from curated organism names → NIH organism_group for susceptibility lookup
+ORGANISM_TO_NIH = {
+    "E. coli (Susceptible)": "E.coli and Shigella",
+    "E. coli / Klebsiella (ESBL)": "E.coli and Shigella",
+    "Klebsiella pneumoniae (S)": "Klebsiella pneumoniae",
+    "Klebsiella (KPC-CRE)": "Klebsiella pneumoniae",
+    "Klebsiella (MBL/NDM)": "Klebsiella pneumoniae",
+    "P. aeruginosa (Susceptible)": "Pseudomonas aeruginosa",
+    "P. aeruginosa (MDR/DTR)": "Pseudomonas aeruginosa",
+    "Acinetobacter baumannii (MDR/XDR)": "Acinetobacter baumannii",
+    "S. aureus (MSSA)": "Staphylococcus aureus",
+    "S. aureus (CA-MRSA)": "Staphylococcus aureus",
+    "S. aureus (HA-MRSA)": "Staphylococcus aureus",
+    "Enterococcus faecalis (S)": "Enterococcus faecalis",
+    "Enterococcus faecalis (VRE)": "Enterococcus faecalis",
+    "Enterococcus faecium (S)": "Enterococcus faecium",
+    "Enterococcus faecium (VRE)": "Enterococcus faecium",
+    "Enterobacter / AmpC producers": "Enterobacter cloacae",
+    "Citrobacter freundii / koseri": "Citrobacter freundii",
+    "Serratia marcescens": "Serratia marcescens",
+    "Salmonella sp.": "Salmonella enterica",
+    "Shigella sp.": "E.coli and Shigella",
+    "Campylobacter jejuni": "Campylobacter jejuni",
+    "Neisseria gonorrhoeae": "Neisseria gonorrhoeae",
+    "Neisseria meningitidis": "Neisseria meningitidis",
+    "Pasteurella multocida": "Pasteurella multocida",
+    "Listeria monocytogenes": "Listeria monocytogenes",
+    "Stenotrophomonas maltophilia": "Stenotrophomonas maltophilia",
+    "Burkholderia cepacia": "Burkholderia cepacia complex",
+    "Clostridioides difficile": "Clostridioides difficile",
+    "Strep. pyogenes (Group A)": "Streptococcus pyogenes",
+    "Strep. agalactiae (Group B)": "Streptococcus agalactiae",
+    "Strep. pneumoniae (PCN-S)": "Streptococcus pneumoniae",
+    "Strep. pneumoniae (PCN-R/MDR)": "Streptococcus pneumoniae",
+    "Morganella / Proteus vulgaris": "Morganella morganii",
+}
+
+# Combination therapy guidance for CI (Combination-only) cells
+COMBO_GUIDANCE = {
+    # Staphylococci + Aminoglycosides
+    ("S. aureus (MSSA)", "AMG"): "Gentamicin with nafcillin or cefazolin for synergy in endocarditis",
+    ("S. aureus (CA-MRSA)", "AMG"): "Gentamicin with vancomycin for synergy in endocarditis — use with caution (nephrotoxicity)",
+    ("S. aureus (HA-MRSA)", "AMG"): "Gentamicin with vancomycin for synergy in endocarditis — use with caution (nephrotoxicity)",
+    ("S. epidermidis / CoNS (S)", "AMG"): "Gentamicin with nafcillin or vancomycin for prosthetic valve endocarditis",
+    ("S. epidermidis / CoNS (R)", "AMG"): "Gentamicin with vancomycin + rifampin for prosthetic valve endocarditis",
+    ("S. lugdunensis", "AMG"): "Gentamicin with nafcillin for synergy in endocarditis",
+    # Streptococci + Aminoglycosides
+    ("Strep. pyogenes (Group A)", "AMG"): "Gentamicin with penicillin for synergy in endocarditis",
+    ("Strep. agalactiae (Group B)", "AMG"): "Gentamicin with ampicillin for synergy in neonatal sepsis/meningitis",
+    ("Viridans Streptococci", "AMG"): "Gentamicin with penicillin G or ceftriaxone for endocarditis",
+    ("Strep. anginosus group", "AMG"): "Gentamicin with penicillin for deep-seated abscess infections",
+    ("Strep. Group C / F / G", "AMG"): "Gentamicin with penicillin for synergy in endocarditis",
+    # Enterococci
+    ("Enterococcus faecalis (S)", "AMG"): "Gentamicin with ampicillin for synergy — check HLAR first; if HLAR+, use ceftriaxone + ampicillin",
+    ("Enterococcus faecalis (S)", "DAP"): "Daptomycin with ampicillin or ceftriaxone for enhanced bactericidal activity",
+    ("Enterococcus faecalis (S)", "CRO"): "Ceftriaxone with ampicillin (double beta-lactam) for endocarditis — IDSA recommended",
+    ("Enterococcus faecalis (VRE)", "AMG"): "Gentamicin with daptomycin or linezolid — check HLAR first",
+    ("Enterococcus faecium (S)", "AMG"): "Gentamicin with ampicillin for synergy if HLAR-negative",
+    ("Enterococcus faecium (VRE)", "AMG"): "Gentamicin with linezolid or daptomycin — check HLAR; often ineffective in VRE",
+    # Bartonella
+    ("Bartonella sp.", "AMG"): "Gentamicin with doxycycline for bacteremia/endocarditis (AHA/IDSA)",
+    # Brucella
+    ("Brucella sp.", "AMG"): "Streptomycin or gentamicin with doxycycline for 6-week course",
+}
+
 # ══════════════════════════════════════════════════════════════════════════════
 #  SENSITIVITY GRID HTML RENDERER
 # ══════════════════════════════════════════════════════════════════════════════
@@ -737,6 +809,12 @@ def render_sensitivity_grid(data: list[dict], filter_group: str = "All",
                 val = row.get(ab, "")
                 c   = CELL_COLORS.get(val, CELL_COLORS[""])
                 tip = f"{ABX_DISPLAY.get(ab,ab)} vs {org}: {c['label']}"
+                if val == "CI":
+                    combo = COMBO_GUIDANCE.get((org, ab))
+                    if combo:
+                        tip += f" — COMBINE: {combo}"
+                    else:
+                        tip += " — Use in combination only (see treatment details)"
                 html_parts.append(
                     f'<td class="sg-cell" style="background:{c["bg"]};color:{c["fg"]};"'
                     f' title="{tip}">{val}</td>'
@@ -925,13 +1003,16 @@ def main():
       .metric-card b { color: #1a3a5c !important; font-size: 1.4rem; }
       .metric-card small { color: #333333 !important; font-size: 0.85rem; }
       div[data-testid="stTabs"] button { font-size: 14px !important; font-weight: 600; }
-      /* Ensure readable text in all Streamlit elements */
       .stMarkdown, .stMarkdown p, .stMarkdown li, .stMarkdown span { color: #1a1a1a; }
       [data-testid="stSidebar"] .stMarkdown, [data-testid="stSidebar"] .stMarkdown p { color: #e0e0e0; }
       h1, h2, h3, h4, h5, h6 { color: #1a3a5c !important; }
       [data-testid="stSidebar"] h1, [data-testid="stSidebar"] h2,
       [data-testid="stSidebar"] h3, [data-testid="stSidebar"] h4 { color: #ffffff !important; }
       .stCaption, [data-testid="stCaptionContainer"] { color: #555555 !important; }
+      .detail-panel { background: white; border-radius: 10px; padding: 20px 24px;
+                      border: 2px solid #0d6efd; box-shadow: 0 2px 8px rgba(0,0,0,.1);
+                      margin-top: 16px; }
+      .nih-bar { border-radius: 4px; height: 18px; display: inline-block; vertical-align: middle; }
     </style>
     """, unsafe_allow_html=True)
 
@@ -939,9 +1020,15 @@ def main():
     st.markdown("""
     <div class="main-banner">
       <h2>Bugs &amp; Drugs — Antimicrobial Stewardship Tool</h2>
-      <p>US Clinical Practice Reference &nbsp;·&nbsp; Bacteria &nbsp;·&nbsp; Fungi &nbsp;·&nbsp; Viruses &nbsp;·&nbsp; MDR Organisms &nbsp;·&nbsp; AMR Database</p>
+      <p>US Clinical Practice Reference &nbsp;&middot;&nbsp; Bacteria &nbsp;&middot;&nbsp; Fungi &nbsp;&middot;&nbsp; Viruses &nbsp;&middot;&nbsp; MDR Organisms &nbsp;&middot;&nbsp; AMR Database</p>
     </div>
     """, unsafe_allow_html=True)
+
+    # Load all data
+    df_treatment = load_treatment_data()
+    amr_orgs = load_amr_organisms()
+    amr_bp = load_amr_breakpoints()
+    nih_data = load_nih_susceptibility()
 
     # Quick stats
     c1, c2, c3, c4 = st.columns(4)
@@ -952,90 +1039,256 @@ def main():
     with c3:
         st.markdown(f'<div class="metric-card"><b>{len(ORGANISM_DATA)}</b><br><small>Treatment Profiles w/ Dosing</small></div>', unsafe_allow_html=True)
     with c4:
-        amr_loaded = os.path.exists("data/amr_microorganisms.csv")
-        amr_label = "AMR DB Connected" if amr_loaded else "AMR DB: Run setup script"
-        color = "#0d6efd" if amr_loaded else "#dc3545"
-        status_icon = "OK" if amr_loaded else "--"
-        st.markdown(f'<div class="metric-card" style="border-left-color:{color};"><b>{status_icon}</b><br><small>{amr_label}</small></div>', unsafe_allow_html=True)
+        nih_label = f"{nih_data['organism_group'].nunique()} organisms" if nih_data is not None else "Run setup"
+        nih_color = "#0d6efd" if nih_data is not None else "#dc3545"
+        st.markdown(f'<div class="metric-card" style="border-left-color:{nih_color};"><b>NIH</b><br><small>Susceptibility: {nih_label}</small></div>', unsafe_allow_html=True)
 
     st.markdown("")
 
-    # ── Tabs ─────────────────────────────────────────────────────────────────
-    tab1, tab2, tab3 = st.tabs([
-        "Sensitivity Grid",
-        "Treatment Details",
-        "Organism Search (AMR DB)",
-    ])
-
     # ══════════════════════════════════════════════════════════════════════
-    # TAB 1: SENSITIVITY GRID
+    # SIDEBAR — Unified Filters
     # ══════════════════════════════════════════════════════════════════════
-    with tab1:
-        st.markdown("### Antibiotic Sensitivity Reference")
-        st.caption("Color-coded sensitivity matrix based on Sanford Guide 2024, IDSA Guidelines, and CDC data. "
-                   "Hover over any cell for details.")
-
-        # Controls
-        col_a, col_b, col_c = st.columns([2, 2, 3])
+    with st.sidebar:
+        st.markdown("## Filters")
+        st.divider()
 
         all_groups = ["All"] + sorted({r["group"] for r in SENSITIVITY_MATRIX})
-        with col_a:
-            group_filter = st.selectbox("Filter by Organism Group", all_groups, key="grid_group")
+        group_filter = st.selectbox("Organism Group", all_groups, key="grid_group")
 
         all_abx_classes = [g for g, _ in ABX_GROUPS]
-        with col_b:
-            abx_class_filter = st.multiselect(
-                "Filter Antibiotic Classes (leave blank = all)",
-                all_abx_classes, default=[], key="grid_abx",
-            )
+        abx_class_filter = st.multiselect(
+            "Antibiotic Classes (blank = all)",
+            all_abx_classes, default=[], key="grid_abx",
+        )
 
-        with col_c:
-            org_search = st.text_input("Search Organism", placeholder="e.g. Pseudomonas, MRSA, Candida", key="grid_search")
+        org_search = st.text_input("Search Organism",
+            placeholder="e.g. Pseudomonas, MRSA, Candida", key="grid_search")
 
-        # Legend
+        st.divider()
+        mdr_focus = st.toggle("MDR Focus Mode", value=False,
+            help="Highlights salvage therapies and high-exposure dosing for resistant organisms")
+        if mdr_focus:
+            st.warning("MDR Focus: showing salvage/high-dose regimens")
+
+        st.divider()
+        st.markdown("### Sensitivity Legend")
         st.markdown(render_legend(), unsafe_allow_html=True)
 
-        # Notes banner
-        st.info(
-            "**Important caveats:**  \n"
-            "**CI** = use only in combination | "
-            "Tigecycline: use only if no other option (FDA warning) | "
-            "Daptomycin: do NOT use for pneumonia | "
-            "Ertapenem has NO activity vs *P. aeruginosa* | "
-            "All beta-lactams inactive vs atypicals (Mycoplasma, Chlamydia, Ureaplasma)"
-        )
-
-        # Render grid
-        selected_classes = abx_class_filter if abx_class_filter else None
-        grid_html = render_sensitivity_grid(
-            SENSITIVITY_MATRIX,
-            filter_group=group_filter,
-            filter_abx_classes=selected_classes,
-            search=org_search,
-        )
-        st.markdown(grid_html, unsafe_allow_html=True)
-
-        # Key clinical notes section
         st.divider()
-        with st.expander("Key Clinical Notes and Special Circumstances", expanded=False):
-            cols_n = st.columns(2)
-            with cols_n[0]:
-                st.markdown("""
+        st.markdown("### Efficacy Legend")
+        st.markdown("""
+        <div style="font-size:13px;line-height:1.9;">
+          <span style="background:#d4edda;padding:2px 8px;border-radius:4px;">&#9632;</span> <b>First-Line</b><br>
+          <span style="background:#fff3cd;padding:2px 8px;border-radius:4px;">&#9632;</span> <b>Alternative</b><br>
+          <span style="background:#f8d7da;padding:2px 8px;border-radius:4px;">&#9632;</span> <b>Not Recommended</b>
+        </div>""", unsafe_allow_html=True)
+        st.divider()
+        st.markdown('<div style="font-size:11px;color:#888;">Sanford Guide 2024, IDSA/ASHP Guidelines, CDC, NIH NARMS<br><b>Clinical decision support only.</b></div>',
+                    unsafe_allow_html=True)
+
+    # ══════════════════════════════════════════════════════════════════════
+    # SENSITIVITY GRID
+    # ══════════════════════════════════════════════════════════════════════
+    st.markdown("### Antibiotic Sensitivity Reference")
+    st.caption("Color-coded sensitivity matrix based on Sanford Guide 2024, IDSA Guidelines, and CDC data. "
+               "Hover over any cell for details. CI cells show combination guidance on hover.")
+
+    st.info(
+        "**Important caveats:**  \n"
+        "**CI** = use only in combination (hover for details) | "
+        "Tigecycline: use only if no other option (FDA warning) | "
+        "Daptomycin: do NOT use for pneumonia | "
+        "Ertapenem has NO activity vs *P. aeruginosa* | "
+        "All beta-lactams inactive vs atypicals (Mycoplasma, Chlamydia, Ureaplasma)"
+    )
+
+    selected_classes = abx_class_filter if abx_class_filter else None
+    grid_html = render_sensitivity_grid(
+        SENSITIVITY_MATRIX,
+        filter_group=group_filter,
+        filter_abx_classes=selected_classes,
+        search=org_search,
+    )
+    st.markdown(grid_html, unsafe_allow_html=True)
+
+    # ══════════════════════════════════════════════════════════════════════
+    # ORGANISM DETAIL PANEL
+    # ══════════════════════════════════════════════════════════════════════
+    st.divider()
+    st.markdown("### Organism Detail Panel")
+    st.caption("Select an organism below to view treatment details, NIH susceptibility data, and AMR database information.")
+
+    # Build full organism list from both sensitivity grid and treatment data
+    grid_organisms = [r["organism"] for r in SENSITIVITY_MATRIX]
+    treatment_organisms = df_treatment["Organism"].tolist()
+    # Merge and deduplicate, preserving order
+    all_organisms = list(dict.fromkeys(grid_organisms + treatment_organisms))
+
+    # Apply same search filter
+    if org_search.strip():
+        s = org_search.strip().lower()
+        all_organisms = [o for o in all_organisms if s in o.lower()]
+
+    selected_org = st.selectbox("Select Organism", ["(none)"] + all_organisms, key="detail_org")
+
+    if selected_org and selected_org != "(none)":
+        # ── Treatment Details ───────────────────────────────────────────
+        treatment_match = df_treatment[df_treatment["Organism"] == selected_org]
+
+        col_left, col_right = st.columns(2)
+
+        if not treatment_match.empty:
+            row = treatment_match.iloc[0]
+            with col_left:
+                st.markdown(f"#### {row['Organism']}")
+                st.markdown(f"**Category:** {row['Category']}  |  **Gram/Morphology:** {row['Gram / Morphology']}")
+                st.divider()
+
+                st.markdown("**First-Line Therapy**")
+                st.info(f"**Agent:** {row['First-Line Therapy']}")
+                st.markdown(f"**US Dosing:** `{row['First-Line Dosing (US)']}`")
+
+                st.markdown("**Alternative Therapy**")
+                st.warning(f"**Agent:** {row['Alternative Therapy']}")
+                st.markdown(f"**US Dosing:** `{row['Alternative Dosing']}`")
+
+            with col_right:
+                eff_code = row.get("Efficacy_MDR", "yellow")
+                eff_label = {"green":"[HIGH]","yellow":"[MODERATE]","red":"[LIMITED]"}.get(eff_code,"[MODERATE]")
+                st.markdown(f"**{eff_label} MDR / Salvage Therapy**")
+                if eff_code == "red":
+                    st.error(f"**Agent:** {row['MDR Therapy']}")
+                else:
+                    st.warning(f"**Agent:** {row['MDR Therapy']}")
+                st.markdown(f"**US Dosing:** `{row['MDR Dosing']}`")
+                st.divider()
+                st.markdown("**Resistance Mechanisms**")
+                st.markdown(f"_{row['Resistance Mechanisms']}_")
+                st.markdown("**Key Notes**")
+                st.markdown(f"> {row['Key Notes']}")
+
+            # ── Combination Therapy Guidance ────────────────────────────
+            org_combos = {k: v for k, v in COMBO_GUIDANCE.items() if k[0] == selected_org}
+            if org_combos:
+                st.divider()
+                st.markdown("#### Combination Therapy Guidance")
+                for (_, abx_code), guidance in org_combos.items():
+                    abx_name = ABX_DISPLAY.get(abx_code, abx_code)
+                    st.markdown(f"- **{abx_name}:** {guidance}")
+        else:
+            with col_left:
+                st.markdown(f"#### {selected_org}")
+                st.info("No curated treatment data available for this organism. See sensitivity grid above for antibiotic coverage.")
+
+        # ── NIH Susceptibility Data ─────────────────────────────────────
+        nih_group = ORGANISM_TO_NIH.get(selected_org)
+        if nih_data is not None and nih_group:
+            nih_match = nih_data[nih_data["organism_group"] == nih_group]
+            if not nih_match.empty:
+                st.divider()
+                st.markdown("#### NIH Susceptibility Data (NARMS)")
+                st.caption(f"Source: NIH National Database of Antibiotic Resistant Organisms  |  "
+                           f"Organism group: *{nih_group}*  |  Based on {nih_match['n_isolates'].sum():,} isolate tests")
+
+                # Sort by most tested, show top 25 antibiotics
+                nih_top = nih_match.sort_values("n_isolates", ascending=False).head(25).copy()
+                nih_top["antibiotic"] = nih_top["antibiotic"].str.title()
+
+                # Color code
+                def nih_color(pct_s):
+                    if pct_s >= 90: return "#d4edda"
+                    elif pct_s >= 70: return "#fff3cd"
+                    else: return "#f8d7da"
+
+                nih_top["Status"] = nih_top["pct_susceptible"].apply(
+                    lambda x: "High S" if x >= 90 else ("Moderate S" if x >= 70 else "Low S"))
+
+                nih_display = nih_top[["antibiotic", "n_isolates", "pct_susceptible",
+                                       "pct_intermediate", "pct_resistant", "Status"]].copy()
+                nih_display.columns = ["Antibiotic", "N Isolates", "% Susceptible",
+                                       "% Intermediate", "% Resistant", "Status"]
+
+                def nih_style(row):
+                    pct = row["% Susceptible"]
+                    bg = nih_color(pct)
+                    return [f"background-color:{bg}"] * len(row)
+
+                styled_nih = (nih_display.style
+                    .apply(nih_style, axis=1)
+                    .format({"% Susceptible": "{:.1f}", "% Intermediate": "{:.1f}", "% Resistant": "{:.1f}"})
+                    .hide(axis="index")
+                    .set_properties(**{"font-size": "12px", "text-align": "center"})
+                    .set_table_styles([
+                        {"selector": "th", "props": [("background-color","#1a3a5c"),("color","white"),
+                                                      ("font-size","12px"),("padding","6px")]},
+                    ])
+                )
+                st.dataframe(styled_nih, use_container_width=True, height=min(350, 35 * len(nih_display) + 40))
+
+        # ── AMR Database Lookup ─────────────────────────────────────────
+        if amr_orgs is not None:
+            # Try to match organism name in AMR database
+            search_terms = selected_org.replace("(", "").replace(")", "").replace("/", " ").split()
+            # Use first two significant words for search
+            search_words = [w for w in search_terms if len(w) > 2 and w not in ("S", "R", "MDR", "XDR", "VRE", "MSSA", "MRSA")][:2]
+
+            if search_words:
+                q = search_words[0].lower()
+                amr_match = amr_orgs[
+                    amr_orgs["fullname"].str.lower().str.contains(q, na=False) &
+                    ~amr_orgs["fullname"].str.lower().str.contains("unknown", na=False)
+                ]
+                if len(search_words) > 1:
+                    q2 = search_words[1].lower()
+                    amr_match2 = amr_match[amr_match["fullname"].str.lower().str.contains(q2, na=False)]
+                    if not amr_match2.empty:
+                        amr_match = amr_match2
+
+                if not amr_match.empty:
+                    st.divider()
+                    st.markdown("#### AMR Database — Taxonomy")
+                    display_cols_amr = [c for c in ["mo","fullname","status","kingdom","phylum","class","gramstain","prevalence"]
+                                        if c in amr_match.columns]
+                    st.dataframe(
+                        amr_match[display_cols_amr].head(20).reset_index(drop=True),
+                        use_container_width=True, height=min(250, 35 * min(20, len(amr_match)) + 40),
+                    )
+
+                    # Clinical breakpoints
+                    if amr_bp is not None and "mo" in amr_match.columns:
+                        mo_codes = amr_match["mo"].dropna().head(5).tolist()
+                        bp_subset = amr_bp[amr_bp["mo"].isin(mo_codes)] if "mo" in amr_bp.columns else pd.DataFrame()
+                        if not bp_subset.empty:
+                            st.markdown("**Clinical Breakpoints (EUCAST/CLSI)**")
+                            bp_cols = [c for c in ["mo","ab","guideline","type","breakpoint_S","breakpoint_R","disk_dose","ref_breakpoint"]
+                                       if c in bp_subset.columns]
+                            st.dataframe(bp_subset[bp_cols].head(50).reset_index(drop=True),
+                                         use_container_width=True, height=250)
+                            st.caption("S = Susceptible breakpoint (mg/L or mm); R = Resistant breakpoint. Source: AMR (for R) package.")
+
+    # ══════════════════════════════════════════════════════════════════════
+    # CLINICAL NOTES & PDF EXPORT
+    # ══════════════════════════════════════════════════════════════════════
+    st.divider()
+    with st.expander("Key Clinical Notes and Special Circumstances", expanded=False):
+        cols_n = st.columns(2)
+        with cols_n[0]:
+            st.markdown("""
 **Gram-Positive Pearls:**
-- **MRSA**: Vancomycin AUC/MIC guided (target 400–600). Ceftaroline active (G5 ceph)
-- **MSSA bacteremia**: Nafcillin > Cefazolin > Vancomycin — avoid VAN if susceptible
+- **MRSA**: Vancomycin AUC/MIC guided (target 400-600). Ceftaroline active (G5 ceph)
+- **MSSA bacteremia**: Nafcillin > Cefazolin > Vancomycin -- avoid VAN if susceptible
 - **VRE**: Linezolid or Daptomycin; consult ID. Quinupristin-dalfopristin for E. faecium only
-- **Strep. pneumoniae MDR**: Levofloxacin + Vancomycin ± Rifampin for meningitis
+- **Strep. pneumoniae MDR**: Levofloxacin + Vancomycin +/- Rifampin for meningitis
 
 **ESBL & CRE:**
 - **ESBL bacteremia**: Carbapenems preferred; avoid pip-tazo
 - **KPC-CRE**: Ceftazidime-avibactam first-line; ID consult mandatory
 - **MBL (NDM/VIM/IMP)**: Ceftaz-AVI alone INEFFECTIVE; need aztreonam-avibactam or cefiderocol
-                """)
-            with cols_n[1]:
-                st.markdown("""
+            """)
+        with cols_n[1]:
+            st.markdown("""
 **Non-Fermenter Pearls:**
-- **P. aeruginosa**: Ertapenem has NO activity; antipseudomonal β-lactam + consider combo for severe
+- **P. aeruginosa**: Ertapenem has NO activity; antipseudomonal beta-lactam + consider combo for severe
 - **A. baumannii MDR/XDR**: Sulbactam component of amp-sulbactam; colistin; cefiderocol
 - **S. maltophilia**: Intrinsically resistant to carbapenems; TMP-SMX first-line
 
@@ -1044,222 +1297,34 @@ def main():
 - **C. difficile**: Fidaxomicin > Vancomycin PO; metronidazole only for mild/non-severe
 - **B. fragilis**: Metronidazole or amox-clav; most cephalosporins ineffective
 - **Legionella**: Fluoroquinolones/macrolides only; beta-lactams do not work
-                """)
-
-    # ══════════════════════════════════════════════════════════════════════
-    # TAB 2: TREATMENT DETAILS
-    # ══════════════════════════════════════════════════════════════════════
-    with tab2:
-        df_full = load_treatment_data()
-
-        with st.sidebar:
-            st.markdown("## Filters + Settings")
-            st.divider()
-
-            mdr_focus = st.toggle("MDR Focus Mode", value=False,
-                help="Highlights salvage therapies and high-exposure dosing for resistant organisms")
-            if mdr_focus:
-                st.warning("MDR Focus: showing salvage/high-dose regimens")
-            st.divider()
-
-            categories  = ["All"] + sorted(df_full["Category"].unique().tolist())
-            cat_sel     = st.selectbox("Pathogen Category", categories)
-            morph_opts  = sorted(df_full["Gram / Morphology"].unique().tolist())
-            morph_sel   = st.multiselect("Gram Stain / Morphology", morph_opts, default=[])
-            search_term = st.text_input("Search Organism",
-                placeholder="e.g. Pseudomonas, Candida, Influenza")
-
-            st.divider()
-            st.markdown("### Efficacy Legend")
-            st.markdown("""
-            <div style="font-size:13px;line-height:1.9;">
-              <span style="background:#d4edda;padding:2px 8px;border-radius:4px;">■</span> <b>First-Line</b><br>
-              <span style="background:#fff3cd;padding:2px 8px;border-radius:4px;">■</span> <b>Alternative</b><br>
-              <span style="background:#f8d7da;padding:2px 8px;border-radius:4px;">■</span> <b>Not Recommended</b>
-            </div>""", unsafe_allow_html=True)
-            st.divider()
-            st.markdown('<div style="font-size:11px;color:#888;">Sanford Guide 2024, IDSA/ASHP Guidelines, CDC<br><b>Clinical decision support only.</b></div>',
-                        unsafe_allow_html=True)
-
-        # Filter
-        df = df_full.copy()
-        if cat_sel != "All":
-            df = df[df["Category"] == cat_sel]
-        if morph_sel:
-            df = df[df["Gram / Morphology"].isin(morph_sel)]
-        if search_term.strip():
-            df = df[df["Organism"].str.contains(search_term.strip(), case=False, na=False)]
-
-        if df.empty:
-            st.info("No organisms match your current filters.")
-        else:
-            mode_label = "MDR Salvage Reference" if mdr_focus else "Standard Antibiogram"
-            st.subheader(mode_label)
-            st.dataframe(build_styled_treatment_df(df, mdr_focus), use_container_width=True, height=550)
-
-            st.divider()
-            with st.expander("Full Detail View", expanded=False):
-                selected_org = st.selectbox("Select Organism for Full Detail", df["Organism"].tolist())
-                if selected_org:
-                    row = df[df["Organism"] == selected_org].iloc[0]
-                    c1, c2 = st.columns(2)
-                    with c1:
-                        st.markdown(f"### {row['Organism']}")
-                        st.markdown(f"**Category:** {row['Category']}")
-                        st.markdown(f"**Gram/Morphology:** {row['Gram / Morphology']}")
-                        st.divider()
-                        st.markdown("#### First-Line Therapy")
-                        st.info(f"**Agent:** {row['First-Line Therapy']}")
-                        st.markdown(f"**US Dosing:** `{row['First-Line Dosing (US)']}`")
-                        st.markdown("#### Alternative Therapy")
-                        st.warning(f"**Agent:** {row['Alternative Therapy']}")
-                        st.markdown(f"**US Dosing:** `{row['Alternative Dosing']}`")
-                    with c2:
-                        eff_code = row.get("Efficacy_MDR","yellow")
-                        eff_label = {"green":"[HIGH]","yellow":"[MODERATE]","red":"[LIMITED]"}.get(eff_code,"[MODERATE]")
-                        st.markdown(f"#### {eff_label} MDR / Salvage Therapy")
-                        if eff_code == "red":
-                            st.error(f"**Agent:** {row['MDR Therapy']}")
-                        else:
-                            st.warning(f"**Agent:** {row['MDR Therapy']}")
-                        st.markdown(f"**US Dosing:** `{row['MDR Dosing']}`")
-                        st.divider()
-                        st.markdown("#### Resistance Mechanisms")
-                        st.markdown(f"_{row['Resistance Mechanisms']}_")
-                        st.markdown("#### Key Notes")
-                        st.markdown(f"> {row['Key Notes']}")
-
-            st.divider()
-            st.subheader("Export")
-            col_btn1, col_btn2 = st.columns([2, 5])
-            with col_btn1:
-                if st.button("Generate PDF", use_container_width=True, type="primary"):
-                    with st.spinner("Building PDF..."):
-                        pdf_bytes = generate_pdf(df, mdr_focus)
-                    filename = f"antibiogram_{'MDR' if mdr_focus else 'standard'}_{cat_sel.replace(' ','_')}.pdf"
-                    st.session_state["pdf_bytes"]    = pdf_bytes
-                    st.session_state["pdf_filename"] = filename
-                    st.success("PDF ready!")
-                if "pdf_bytes" in st.session_state:
-                    st.download_button("Download PDF", data=st.session_state["pdf_bytes"],
-                        file_name=st.session_state.get("pdf_filename","antibiogram.pdf"),
-                        mime="application/pdf", use_container_width=True)
-
-    # ══════════════════════════════════════════════════════════════════════
-    # TAB 3: AMR DATABASE ORGANISM SEARCH
-    # ══════════════════════════════════════════════════════════════════════
-    with tab3:
-        st.markdown("### AMR Package — Organism Taxonomy & Breakpoint Lookup")
-
-        amr_orgs = load_amr_organisms()
-        amr_bp   = load_amr_breakpoints()
-
-        if amr_orgs is None:
-            st.warning("""
-**AMR database files not found.** To enable this feature:
-
-1. Make sure you have the AMR Python package installed on your local machine.
-2. Run the setup script once:
-   ```bash
-   python generate_amr_data.py
-   ```
-3. This creates CSV files in the `data/` folder.
-4. Commit those CSV files to your repo — Streamlit Cloud will read them without needing R.
             """)
-            st.info("The AMR (for R) package provides 78,000+ taxonomic records, "
-                    "clinical breakpoints (EUCAST & CLSI), and intrinsic resistance data.")
-        else:
-            st.success(f"AMR database loaded — {len(amr_orgs):,} taxonomic records")
 
-            # Search controls
-            search_col1, search_col2, search_col3 = st.columns([3, 2, 2])
-            with search_col1:
-                amr_query = st.text_input("Search organism (name, genus, species, code)",
-                    placeholder="e.g. Escherichia coli, Staphylococcus, ESCCOL", key="amr_search")
-            with search_col2:
-                kingdom_filter = st.selectbox("Kingdom", ["All"] +
-                    sorted(amr_orgs["kingdom"].dropna().unique().tolist()) if "kingdom" in amr_orgs.columns else ["All"])
-            with search_col3:
-                status_filter = st.selectbox("Taxonomic Status", ["All"] +
-                    sorted(amr_orgs["status"].dropna().unique().tolist()) if "status" in amr_orgs.columns else ["All"])
-
-            # Filter
-            df_amr = amr_orgs.copy()
-            if kingdom_filter != "All" and "kingdom" in df_amr.columns:
-                df_amr = df_amr[df_amr["kingdom"] == kingdom_filter]
-            if status_filter != "All" and "status" in df_amr.columns:
-                df_amr = df_amr[df_amr["status"] == status_filter]
-
-            if amr_query.strip():
-                q = amr_query.strip().lower()
-                mask = (
-                    df_amr["fullname"].str.lower().str.contains(q, na=False)
-                )
-                # Also search mo code if column exists
-                if "mo" in df_amr.columns:
-                    mask |= df_amr["mo"].str.lower().str.contains(q, na=False)
-                df_amr = df_amr[mask]
-
-            st.caption(f"Showing {min(len(df_amr), 200):,} of {len(df_amr):,} matching records (max 200 displayed)")
-
-            # Display columns
-            display_cols_amr = [c for c in ["mo","fullname","status","kingdom","phylum","class","gramstain","prevalence"]
-                                if c in df_amr.columns]
-            st.dataframe(
-                df_amr[display_cols_amr].head(200).reset_index(drop=True),
-                use_container_width=True, height=350,
-            )
-
-            # Breakpoint lookup
-            if amr_bp is not None and amr_query.strip() and len(df_amr) > 0:
-                st.divider()
-                st.markdown("#### Clinical Breakpoints (EUCAST/CLSI)")
-
-                # Get MO codes for matched organisms
-                if "mo" in df_amr.columns:
-                    mo_codes = df_amr["mo"].dropna().head(10).tolist()
-                    bp_subset = amr_bp[amr_bp["mo"].isin(mo_codes)] if "mo" in amr_bp.columns else pd.DataFrame()
-
-                    if not bp_subset.empty:
-                        bp_cols = [c for c in ["mo","ab","guideline","type","breakpoint_S","breakpoint_R","disk_dose","ref_breakpoint"]
-                                   if c in bp_subset.columns]
-                        st.dataframe(bp_subset[bp_cols].head(100).reset_index(drop=True),
-                                     use_container_width=True, height=300)
-                        st.caption("S = Susceptible breakpoint (mg/L or mm); R = Resistant breakpoint. Source: AMR (for R) package.")
-                    else:
-                        st.info("No breakpoints found for the selected organisms in the AMR database.")
-
-            # Intrinsic resistance info
-            st.divider()
-            st.markdown("#### About the AMR Database")
-            metric_cols = st.columns(3)
-            with metric_cols[0]:
-                st.metric("Total Taxa", f"{len(amr_orgs):,}")
-            with metric_cols[1]:
-                if "kingdom" in amr_orgs.columns:
-                    bact = amr_orgs[amr_orgs["kingdom"]=="Bacteria"].shape[0]
-                    st.metric("Bacteria", f"{bact:,}")
-            with metric_cols[2]:
-                if "status" in amr_orgs.columns:
-                    acc = amr_orgs[amr_orgs["status"]=="accepted"].shape[0]
-                    st.metric("Accepted Names", f"{acc:,}")
-
-            st.markdown("""
-            The **AMR (for R) package** database includes:
-            - **78,000+** taxonomic records from LPSN, MycoBank, GBIF
-            - **Clinical breakpoints** from EUCAST and CLSI guidelines
-            - **Intrinsic resistance** definitions per guideline
-            - **625** antimicrobial drug entries with ATC codes and DDD values
-
-            Data provided by the [AMR for R project](https://amr-for-r.org) — 
-            University of Groningen, UMCG, Netherlands (GPL-2 license).
-            """)
+    # PDF Export
+    st.divider()
+    st.subheader("Export")
+    col_btn1, col_btn2 = st.columns([2, 5])
+    with col_btn1:
+        df_for_export = df_treatment.copy()
+        if mdr_focus:
+            st.caption("Exporting MDR-focused data")
+        if st.button("Generate PDF", use_container_width=True, type="primary"):
+            with st.spinner("Building PDF..."):
+                pdf_bytes = generate_pdf(df_for_export, mdr_focus)
+            filename = f"antibiogram_{'MDR' if mdr_focus else 'standard'}.pdf"
+            st.session_state["pdf_bytes"] = pdf_bytes
+            st.session_state["pdf_filename"] = filename
+            st.success("PDF ready!")
+        if "pdf_bytes" in st.session_state:
+            st.download_button("Download PDF", data=st.session_state["pdf_bytes"],
+                file_name=st.session_state.get("pdf_filename","antibiogram.pdf"),
+                mime="application/pdf", use_container_width=True)
 
     # ── Footer ──────────────────────────────────────────────────────────────
     st.divider()
     st.markdown("""
     <div style="text-align:center;font-size:11px;color:#888;padding:8px;">
-    Sensitivity data: <b>Sanford Guide 2024</b>, IDSA Guidelines, CDC, ASHP. 
+    Sensitivity data: <b>Sanford Guide 2024</b>, IDSA Guidelines, CDC, ASHP.
+    Susceptibility data: <b>NIH National Database of Antibiotic Resistant Organisms (NARMS)</b>.
     Organism taxonomy: <b>AMR (for R) package</b> — University of Groningen, UMCG.<br>
     <b>For clinical decision support and educational use only.</b>
     Always verify with local antibiogram, patient-specific factors, and ID consultation.<br>
@@ -1270,3 +1335,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

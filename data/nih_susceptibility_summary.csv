@@ -1,0 +1,945 @@
+organism_group,antibiotic,n_isolates,pct_susceptible,pct_intermediate,pct_resistant
+Acinetobacter baumannii,amikacin,1410,56.0,4.8,39.1
+Acinetobacter baumannii,amoxicillin-clavulanic acid,14,0.0,0.0,100.0
+Acinetobacter baumannii,ampicillin,673,0.1,0.1,99.7
+Acinetobacter baumannii,ampicillin-sulbactam,1247,48.0,14.5,37.5
+Acinetobacter baumannii,azithromycin,5,80.0,0.0,20.0
+Acinetobacter baumannii,aztreonam,751,0.1,2.3,97.6
+Acinetobacter baumannii,cefazolin,666,0.2,0.0,99.8
+Acinetobacter baumannii,cefepime,408,37.3,8.3,54.4
+Acinetobacter baumannii,cefotaxime,687,4.1,6.1,89.8
+Acinetobacter baumannii,cefotetan,105,1.0,0.0,99.0
+Acinetobacter baumannii,cefoxitin,478,0.0,0.0,100.0
+Acinetobacter baumannii,cefpodoxime,4,100.0,0.0,0.0
+Acinetobacter baumannii,ceftazidime,1482,19.6,17.9,62.4
+Acinetobacter baumannii,ceftiofur,76,98.7,0.0,1.3
+Acinetobacter baumannii,ceftriaxone,1332,6.6,8.0,85.4
+Acinetobacter baumannii,cefuroxime,7,0.0,0.0,100.0
+Acinetobacter baumannii,cephalothin,4,0.0,0.0,100.0
+Acinetobacter baumannii,chloramphenicol,6,0.0,0.0,100.0
+Acinetobacter baumannii,ciprofloxacin,1632,22.5,1.3,76.2
+Acinetobacter baumannii,colistin,387,89.9,1.8,8.3
+Acinetobacter baumannii,doripenem,396,60.1,0.3,39.6
+Acinetobacter baumannii,enrofloxacin,76,92.1,2.6,5.3
+Acinetobacter baumannii,ertapenem,9,0.0,11.1,88.9
+Acinetobacter baumannii,gentamicin,1659,20.0,6.9,73.1
+Acinetobacter baumannii,imipenem,1410,59.9,4.8,35.3
+Acinetobacter baumannii,levofloxacin,1280,17.5,23.5,59.0
+Acinetobacter baumannii,marbofloxacin,76,88.2,5.3,6.6
+Acinetobacter baumannii,meropenem,841,51.8,5.5,42.7
+Acinetobacter baumannii,minocycline,255,61.2,28.2,10.6
+Acinetobacter baumannii,moxifloxacin,92,27.2,9.8,63.0
+Acinetobacter baumannii,nalidixic acid,4,100.0,0.0,0.0
+Acinetobacter baumannii,nitrofurantoin,662,0.0,0.0,100.0
+Acinetobacter baumannii,piperacillin-tazobactam,296,32.8,6.8,60.5
+Acinetobacter baumannii,polymyxin B,328,79.6,0.0,20.4
+Acinetobacter baumannii,streptomycin,4,100.0,0.0,0.0
+Acinetobacter baumannii,sulfisoxazole,4,100.0,0.0,0.0
+Acinetobacter baumannii,tetracycline,972,29.5,4.9,65.5
+Acinetobacter baumannii,ticarcillin-clavulanic acid,3,33.3,0.0,66.7
+Acinetobacter baumannii,tigecycline,394,91.9,6.3,1.8
+Acinetobacter baumannii,tobramycin,1334,36.7,9.1,54.2
+Acinetobacter baumannii,trimethoprim-sulfamethoxazole,1172,20.0,0.0,80.0
+Burkholderia cepacia complex,ceftazidime,5,100.0,0.0,0.0
+Burkholderia cepacia complex,colistin,4,0.0,0.0,100.0
+Burkholderia cepacia complex,meropenem,6,100.0,0.0,0.0
+Burkholderia cepacia complex,minocycline,4,75.0,0.0,25.0
+Burkholderia cepacia complex,trimethoprim-sulfamethoxazole,4,75.0,0.0,25.0
+Campylobacter jejuni,amoxicillin-clavulanic acid,163,100.0,0.0,0.0
+Campylobacter jejuni,ampicillin,163,85.9,0.0,14.1
+Campylobacter jejuni,azithromycin,3841,98.0,0.0,2.0
+Campylobacter jejuni,ciprofloxacin,4009,79.3,0.0,20.7
+Campylobacter jejuni,clindamycin,3841,97.1,0.0,2.9
+Campylobacter jejuni,erythromycin,4009,97.9,0.0,2.1
+Campylobacter jejuni,florfenicol,3841,100.0,0.0,0.0
+Campylobacter jejuni,gentamicin,4004,99.2,0.0,0.8
+Campylobacter jejuni,meropenem,511,100.0,0.0,0.0
+Campylobacter jejuni,nalidixic acid,3841,79.1,0.0,20.9
+Campylobacter jejuni,telithromycin,2951,97.9,0.0,2.1
+Campylobacter jejuni,tetracycline,4008,52.2,0.0,47.8
+Candidozyma auris,amphotericin B,23,65.2,0.0,34.8
+Candidozyma auris,anidulafungin,23,17.4,0.0,82.6
+Candidozyma auris,caspofungin,23,21.7,0.0,78.3
+Candidozyma auris,fluconazole,23,0.0,0.0,100.0
+Candidozyma auris,flucytosine,19,63.2,0.0,36.8
+Candidozyma auris,isavuconazole,23,39.1,47.8,13.0
+Candidozyma auris,itraconazole,23,39.1,56.5,4.3
+Candidozyma auris,micafungin,23,21.7,0.0,78.3
+Candidozyma auris,posaconazole,23,91.3,8.7,0.0
+Candidozyma auris,voriconazole,23,4.3,60.9,34.8
+Citrobacter freundii,amikacin,64,93.8,1.6,4.7
+Citrobacter freundii,amoxicillin-clavulanic acid,55,5.5,1.8,92.7
+Citrobacter freundii,ampicillin,28,28.6,3.6,67.9
+Citrobacter freundii,ampicillin-sulbactam,9,22.2,0.0,77.8
+Citrobacter freundii,azithromycin,4,50.0,0.0,50.0
+Citrobacter freundii,aztreonam,13,46.2,7.7,46.2
+Citrobacter freundii,cefazolin,21,23.8,0.0,76.2
+Citrobacter freundii,cefepime,57,87.7,1.8,10.5
+Citrobacter freundii,cefotaxime,11,36.4,0.0,63.6
+Citrobacter freundii,cefoxitin,54,13.0,0.0,87.0
+Citrobacter freundii,ceftazidime,59,16.9,1.7,81.4
+Citrobacter freundii,ceftriaxone,63,15.9,4.8,79.4
+Citrobacter freundii,cephalothin,4,25.0,0.0,75.0
+Citrobacter freundii,chloramphenicol,4,75.0,0.0,25.0
+Citrobacter freundii,ciprofloxacin,64,71.9,1.6,26.6
+Citrobacter freundii,clindamycin,3,33.3,0.0,66.7
+Citrobacter freundii,daptomycin,4,75.0,25.0,0.0
+Citrobacter freundii,doripenem,6,66.7,16.7,16.7
+Citrobacter freundii,doxycycline,10,40.0,10.0,50.0
+Citrobacter freundii,ertapenem,56,80.4,3.6,16.1
+Citrobacter freundii,erythromycin,9,0.0,22.2,77.8
+Citrobacter freundii,gentamicin,67,71.6,1.5,26.9
+Citrobacter freundii,imipenem,18,44.4,11.1,44.4
+Citrobacter freundii,levofloxacin,69,68.1,10.1,21.7
+Citrobacter freundii,linezolid,10,100.0,0.0,0.0
+Citrobacter freundii,meropenem,64,82.8,3.1,14.1
+Citrobacter freundii,moxifloxacin,3,0.0,0.0,100.0
+Citrobacter freundii,nitrofurantoin,25,88.0,12.0,0.0
+Citrobacter freundii,oxacillin,3,0.0,0.0,100.0
+Citrobacter freundii,piperacillin,3,0.0,33.3,66.7
+Citrobacter freundii,piperacillin-tazobactam,55,40.0,14.5,45.5
+Citrobacter freundii,streptomycin,11,72.7,0.0,27.3
+Citrobacter freundii,tetracycline,56,69.6,1.8,28.6
+Citrobacter freundii,tigecycline,10,90.0,10.0,0.0
+Citrobacter freundii,tobramycin,59,74.6,3.4,22.0
+Citrobacter freundii,trimethoprim-sulfamethoxazole,69,72.5,0.0,27.5
+Citrobacter freundii,vancomycin,9,55.6,0.0,44.4
+Clostridioides difficile,clindamycin,29,0.0,3.4,96.6
+Clostridioides difficile,erythromycin,28,7.1,0.0,92.9
+Clostridioides difficile,fidaxomicin,28,100.0,0.0,0.0
+Clostridioides difficile,linezolid,28,7.1,0.0,92.9
+Clostridioides difficile,metronidazole,29,100.0,0.0,0.0
+Clostridioides difficile,moxifloxacin,29,10.3,0.0,89.7
+Clostridioides difficile,tetracycline,28,7.1,0.0,92.9
+Clostridioides difficile,vancomycin,28,100.0,0.0,0.0
+Corynebacterium striatum,erythromycin,3,0.0,0.0,100.0
+Corynebacterium striatum,gentamicin,3,33.3,0.0,66.7
+Corynebacterium striatum,penicillin,3,0.0,0.0,100.0
+Corynebacterium striatum,vancomycin,3,100.0,0.0,0.0
+E.coli and Shigella,amikacin,3662,94.0,0.4,5.5
+E.coli and Shigella,amoxicillin,37,2.7,0.0,97.3
+E.coli and Shigella,amoxicillin-clavulanic acid,7005,80.1,6.9,13.0
+E.coli and Shigella,ampicillin,8080,52.4,0.2,47.4
+E.coli and Shigella,ampicillin-sulbactam,569,36.6,15.6,47.8
+E.coli and Shigella,azithromycin,4604,98.7,0.0,1.2
+E.coli and Shigella,aztreonam,2525,83.8,1.9,14.3
+E.coli and Shigella,carbenicillin,4,50.0,25.0,25.0
+E.coli and Shigella,cefalexin,136,77.9,0.7,21.3
+E.coli and Shigella,cefalotin,138,79.0,2.2,18.8
+E.coli and Shigella,cefazolin,2909,58.1,6.3,35.6
+E.coli and Shigella,cefepime,3963,78.0,3.5,18.5
+E.coli and Shigella,cefoperazone,136,77.2,0.7,22.1
+E.coli and Shigella,cefotaxime,1071,28.1,2.0,69.9
+E.coli and Shigella,cefotaxime-clavulanic acid,340,83.5,0.0,16.5
+E.coli and Shigella,cefotetan,6,83.3,16.7,0.0
+E.coli and Shigella,cefoxitin,5480,78.5,2.2,19.4
+E.coli and Shigella,cefpodoxime,173,33.5,0.0,66.5
+E.coli and Shigella,ceftaroline,9,66.7,0.0,33.3
+E.coli and Shigella,ceftazidime,3829,70.6,2.7,26.7
+E.coli and Shigella,ceftazidime-avibactam,128,89.8,0.0,10.2
+E.coli and Shigella,ceftazidime-clavulanic acid,338,84.0,0.0,16.0
+E.coli and Shigella,ceftiofur,1349,65.8,5.4,28.8
+E.coli and Shigella,ceftolozane-tazobactam,202,49.5,1.0,49.5
+E.coli and Shigella,ceftriaxone,7265,78.1,0.2,21.7
+E.coli and Shigella,cefuroxime,10,20.0,0.0,80.0
+E.coli and Shigella,cephalexin,14,0.0,0.0,100.0
+E.coli and Shigella,cephalothin,178,19.7,12.4,68.0
+E.coli and Shigella,chloramphenicol,4684,88.9,1.4,9.7
+E.coli and Shigella,ciprofloxacin,8223,79.5,1.9,18.6
+E.coli and Shigella,clindamycin,9,44.4,0.0,55.6
+E.coli and Shigella,colistin,622,82.0,15.3,2.7
+E.coli and Shigella,daptomycin,21,71.4,23.8,4.8
+E.coli and Shigella,delafloxacin,10,40.0,0.0,60.0
+E.coli and Shigella,doripenem,166,70.5,6.0,23.5
+E.coli and Shigella,doxycycline,42,14.3,33.3,52.4
+E.coli and Shigella,enrofloxacin,152,63.2,10.5,26.3
+E.coli and Shigella,ertapenem,3738,93.2,0.5,6.3
+E.coli and Shigella,erythromycin,26,0.0,26.9,73.1
+E.coli and Shigella,florfenicol,136,51.5,35.3,13.2
+E.coli and Shigella,fosfomycin,98,96.9,0.0,3.1
+E.coli and Shigella,gentamicin,7824,82.5,1.4,16.2
+E.coli and Shigella,imipenem,3396,93.6,1.0,5.5
+E.coli and Shigella,kanamycin,1212,86.3,0.2,13.4
+E.coli and Shigella,levofloxacin,3302,66.2,3.3,30.6
+E.coli and Shigella,linezolid,22,95.5,0.0,4.5
+E.coli and Shigella,marbofloxacin,153,63.4,0.7,35.9
+E.coli and Shigella,meropenem,6646,96.5,0.2,3.3
+E.coli and Shigella,meropenem-vaborbactam,76,96.1,0.0,3.9
+E.coli and Shigella,minocycline,66,72.7,10.6,16.7
+E.coli and Shigella,moxifloxacin,60,31.7,5.0,63.3
+E.coli and Shigella,nalidixic acid,4778,91.7,0.0,8.3
+E.coli and Shigella,neomycin,138,2.2,6.5,91.3
+E.coli and Shigella,nitrofurantoin,518,87.8,6.9,5.2
+E.coli and Shigella,norfloxacin,99,81.8,3.0,15.2
+E.coli and Shigella,orbifloxacin,13,15.4,0.0,84.6
+E.coli and Shigella,oxacillin,11,18.2,0.0,81.8
+E.coli and Shigella,piperacillin,11,9.1,0.0,90.9
+E.coli and Shigella,piperacillin-tazobactam,3127,89.6,2.5,8.0
+E.coli and Shigella,plazomicin,6,83.3,16.7,0.0
+E.coli and Shigella,polymyxin,4,100.0,0.0,0.0
+E.coli and Shigella,polymyxin B,149,28.2,0.7,71.1
+E.coli and Shigella,rifampin,10,70.0,0.0,30.0
+E.coli and Shigella,streptomycin,4124,64.6,0.0,35.4
+E.coli and Shigella,sulfamethoxazole,528,37.5,0.0,62.5
+E.coli and Shigella,sulfisoxazole,4118,64.1,0.1,35.8
+E.coli and Shigella,temocillin,338,99.1,0.0,0.9
+E.coli and Shigella,tetracycline,7427,56.2,0.6,43.2
+E.coli and Shigella,ticarcillin,30,3.3,0.0,96.7
+E.coli and Shigella,ticarcillin-clavulanic acid,144,41.7,29.2,29.2
+E.coli and Shigella,tigecycline,777,98.6,0.3,1.2
+E.coli and Shigella,tobramycin,3273,84.1,5.7,10.2
+E.coli and Shigella,trimethoprim,529,50.1,0.0,49.9
+E.coli and Shigella,trimethoprim-sulfamethoxazole,7485,80.7,0.0,19.3
+E.coli and Shigella,vancomycin,20,90.0,0.0,10.0
+Enterobacter asburiae,amikacin,10,100.0,0.0,0.0
+Enterobacter asburiae,amoxicillin-clavulanic acid,11,0.0,0.0,100.0
+Enterobacter asburiae,ampicillin,7,0.0,0.0,100.0
+Enterobacter asburiae,aztreonam,4,50.0,0.0,50.0
+Enterobacter asburiae,cefazolin,4,0.0,0.0,100.0
+Enterobacter asburiae,cefepime,9,66.7,0.0,33.3
+Enterobacter asburiae,cefotaxime,4,25.0,0.0,75.0
+Enterobacter asburiae,cefoxitin,12,0.0,0.0,100.0
+Enterobacter asburiae,ceftazidime,11,18.2,0.0,81.8
+Enterobacter asburiae,ceftriaxone,11,27.3,0.0,72.7
+Enterobacter asburiae,ciprofloxacin,13,53.8,0.0,46.2
+Enterobacter asburiae,ertapenem,6,33.3,16.7,50.0
+Enterobacter asburiae,gentamicin,13,69.2,7.7,23.1
+Enterobacter asburiae,imipenem,5,20.0,40.0,40.0
+Enterobacter asburiae,levofloxacin,9,44.4,0.0,55.6
+Enterobacter asburiae,meropenem,13,61.5,0.0,38.5
+Enterobacter asburiae,nitrofurantoin,4,50.0,25.0,25.0
+Enterobacter asburiae,piperacillin-tazobactam,10,20.0,10.0,70.0
+Enterobacter asburiae,tetracycline,10,90.0,0.0,10.0
+Enterobacter asburiae,tigecycline,4,100.0,0.0,0.0
+Enterobacter asburiae,tobramycin,9,55.6,0.0,44.4
+Enterobacter asburiae,trimethoprim-sulfamethoxazole,12,66.7,0.0,33.3
+Enterobacter bugandensis,amikacin,4,100.0,0.0,0.0
+Enterobacter bugandensis,amoxicillin-clavulanic acid,5,0.0,0.0,100.0
+Enterobacter bugandensis,cefepime,6,33.3,0.0,66.7
+Enterobacter bugandensis,cefotaxime,3,0.0,0.0,100.0
+Enterobacter bugandensis,cefoxitin,5,0.0,0.0,100.0
+Enterobacter bugandensis,ceftazidime,6,0.0,0.0,100.0
+Enterobacter bugandensis,ceftriaxone,4,25.0,0.0,75.0
+Enterobacter bugandensis,ciprofloxacin,7,85.7,0.0,14.3
+Enterobacter bugandensis,ertapenem,6,50.0,0.0,50.0
+Enterobacter bugandensis,gentamicin,7,100.0,0.0,0.0
+Enterobacter bugandensis,imipenem,3,0.0,33.3,66.7
+Enterobacter bugandensis,levofloxacin,4,75.0,0.0,25.0
+Enterobacter bugandensis,meropenem,7,57.1,0.0,42.9
+Enterobacter bugandensis,piperacillin-tazobactam,4,0.0,0.0,100.0
+Enterobacter bugandensis,tetracycline,4,75.0,0.0,25.0
+Enterobacter bugandensis,tobramycin,4,75.0,0.0,25.0
+Enterobacter bugandensis,trimethoprim-sulfamethoxazole,5,80.0,0.0,20.0
+Enterobacter chengduensis,amikacin,3,0.0,0.0,100.0
+Enterobacter chengduensis,gentamicin,3,0.0,0.0,100.0
+Enterobacter chengduensis,meropenem,3,0.0,0.0,100.0
+Enterobacter cloacae,amikacin,81,81.5,1.2,17.3
+Enterobacter cloacae,amoxicillin-clavulanic acid,60,18.3,1.7,80.0
+Enterobacter cloacae,ampicillin,80,12.5,0.0,87.5
+Enterobacter cloacae,ampicillin-sulbactam,27,3.7,0.0,96.3
+Enterobacter cloacae,aztreonam,71,11.3,2.8,85.9
+Enterobacter cloacae,cefalexin,11,100.0,0.0,0.0
+Enterobacter cloacae,cefalotin,11,100.0,0.0,0.0
+Enterobacter cloacae,cefazolin,52,0.0,0.0,100.0
+Enterobacter cloacae,cefepime,81,38.3,12.3,49.4
+Enterobacter cloacae,cefiderocol,3,100.0,0.0,0.0
+Enterobacter cloacae,cefoperazone,11,36.4,0.0,63.6
+Enterobacter cloacae,cefotaxime,63,4.8,0.0,95.2
+Enterobacter cloacae,cefoxitin,82,13.4,1.2,85.4
+Enterobacter cloacae,ceftazidime,81,11.1,0.0,88.9
+Enterobacter cloacae,ceftazidime-avibactam,23,65.2,0.0,34.8
+Enterobacter cloacae,ceftiofur,11,36.4,0.0,63.6
+Enterobacter cloacae,ceftolozane-tazobactam,25,24.0,0.0,76.0
+Enterobacter cloacae,ceftriaxone,82,9.8,0.0,90.2
+Enterobacter cloacae,chloramphenicol,5,40.0,20.0,40.0
+Enterobacter cloacae,ciprofloxacin,96,51.0,5.2,43.8
+Enterobacter cloacae,colistin,16,6.2,37.5,56.2
+Enterobacter cloacae,delafloxacin,5,20.0,0.0,80.0
+Enterobacter cloacae,doripenem,57,45.6,15.8,38.6
+Enterobacter cloacae,enrofloxacin,11,36.4,0.0,63.6
+Enterobacter cloacae,ertapenem,79,24.1,8.9,67.1
+Enterobacter cloacae,florfenicol,11,27.3,63.6,9.1
+Enterobacter cloacae,gentamicin,81,69.1,3.7,27.2
+Enterobacter cloacae,imipenem,77,40.3,13.0,46.8
+Enterobacter cloacae,imipenem-relebactam,4,75.0,25.0,0.0
+Enterobacter cloacae,levofloxacin,83,55.4,6.0,38.6
+Enterobacter cloacae,marbofloxacin,11,36.4,0.0,63.6
+Enterobacter cloacae,meropenem,84,51.2,8.3,40.5
+Enterobacter cloacae,meropenem-vaborbactam,10,90.0,0.0,10.0
+Enterobacter cloacae,minocycline,18,50.0,33.3,16.7
+Enterobacter cloacae,nalidixic acid,3,100.0,0.0,0.0
+Enterobacter cloacae,neomycin,11,0.0,0.0,100.0
+Enterobacter cloacae,nitrofurantoin,8,37.5,25.0,37.5
+Enterobacter cloacae,omadacycline,3,66.7,33.3,0.0
+Enterobacter cloacae,piperacillin-tazobactam,78,12.8,7.7,79.5
+Enterobacter cloacae,plazomicin,11,90.9,0.0,9.1
+Enterobacter cloacae,polymyxin B,6,50.0,0.0,50.0
+Enterobacter cloacae,sulfisoxazole,3,0.0,100.0,0.0
+Enterobacter cloacae,tetracycline,71,50.7,19.7,29.6
+Enterobacter cloacae,ticarcillin-clavulanic acid,11,36.4,0.0,63.6
+Enterobacter cloacae,tigecycline,64,87.5,9.4,3.1
+Enterobacter cloacae,tobramycin,89,60.7,3.4,36.0
+Enterobacter cloacae,trimethoprim-sulfamethoxazole,97,45.4,1.0,53.6
+Enterobacter hormaechei,amikacin,103,87.4,0.0,12.6
+Enterobacter hormaechei,amoxicillin-clavulanic acid,88,10.2,0.0,89.8
+Enterobacter hormaechei,ampicillin,49,30.6,0.0,69.4
+Enterobacter hormaechei,ampicillin-sulbactam,12,0.0,0.0,100.0
+Enterobacter hormaechei,azithromycin,3,100.0,0.0,0.0
+Enterobacter hormaechei,aztreonam,20,25.0,0.0,75.0
+Enterobacter hormaechei,cefalexin,5,100.0,0.0,0.0
+Enterobacter hormaechei,cefalotin,5,100.0,0.0,0.0
+Enterobacter hormaechei,cefazolin,25,8.0,0.0,92.0
+Enterobacter hormaechei,cefepime,94,63.8,1.1,35.1
+Enterobacter hormaechei,cefoperazone,5,80.0,0.0,20.0
+Enterobacter hormaechei,cefotaxime,23,17.4,0.0,82.6
+Enterobacter hormaechei,cefoxitin,98,7.1,1.0,91.8
+Enterobacter hormaechei,cefpodoxime,3,0.0,0.0,100.0
+Enterobacter hormaechei,ceftazidime,102,20.6,3.9,75.5
+Enterobacter hormaechei,ceftazidime-avibactam,7,14.3,0.0,85.7
+Enterobacter hormaechei,ceftiofur,5,80.0,20.0,0.0
+Enterobacter hormaechei,ceftriaxone,92,12.0,0.0,88.0
+Enterobacter hormaechei,cephalothin,10,50.0,0.0,50.0
+Enterobacter hormaechei,chloramphenicol,13,76.9,0.0,23.1
+Enterobacter hormaechei,ciprofloxacin,101,60.4,5.9,33.7
+Enterobacter hormaechei,colistin,6,66.7,0.0,33.3
+Enterobacter hormaechei,daptomycin,9,66.7,33.3,0.0
+Enterobacter hormaechei,doripenem,9,44.4,11.1,44.4
+Enterobacter hormaechei,doxycycline,13,53.8,38.5,7.7
+Enterobacter hormaechei,enrofloxacin,5,40.0,20.0,40.0
+Enterobacter hormaechei,ertapenem,61,68.9,1.6,29.5
+Enterobacter hormaechei,erythromycin,9,0.0,33.3,66.7
+Enterobacter hormaechei,florfenicol,5,60.0,40.0,0.0
+Enterobacter hormaechei,gentamicin,107,72.9,1.9,25.2
+Enterobacter hormaechei,imipenem,30,43.3,3.3,53.3
+Enterobacter hormaechei,imipenem-relebactam,3,0.0,0.0,100.0
+Enterobacter hormaechei,levofloxacin,84,53.6,14.3,32.1
+Enterobacter hormaechei,linezolid,13,100.0,0.0,0.0
+Enterobacter hormaechei,marbofloxacin,5,40.0,0.0,60.0
+Enterobacter hormaechei,meropenem,105,70.5,1.9,27.6
+Enterobacter hormaechei,meropenem-vaborbactam,3,0.0,33.3,66.7
+Enterobacter hormaechei,minocycline,8,37.5,25.0,37.5
+Enterobacter hormaechei,nalidixic acid,7,100.0,0.0,0.0
+Enterobacter hormaechei,neomycin,5,0.0,0.0,100.0
+Enterobacter hormaechei,nitrofurantoin,34,35.3,23.5,41.2
+Enterobacter hormaechei,omadacycline,3,0.0,66.7,33.3
+Enterobacter hormaechei,piperacillin-tazobactam,91,28.6,2.2,69.2
+Enterobacter hormaechei,plazomicin,3,100.0,0.0,0.0
+Enterobacter hormaechei,polymyxin B,8,25.0,0.0,75.0
+Enterobacter hormaechei,streptomycin,15,100.0,0.0,0.0
+Enterobacter hormaechei,sulfisoxazole,7,57.1,42.9,0.0
+Enterobacter hormaechei,tetracycline,91,59.3,3.3,37.4
+Enterobacter hormaechei,ticarcillin-clavulanic acid,6,83.3,0.0,16.7
+Enterobacter hormaechei,tigecycline,19,73.7,10.5,15.8
+Enterobacter hormaechei,tobramycin,91,65.9,9.9,24.2
+Enterobacter hormaechei,trimethoprim-sulfamethoxazole,96,58.3,0.0,41.7
+Enterobacter hormaechei,vancomycin,12,100.0,0.0,0.0
+Enterobacter kobei,amikacin,12,75.0,0.0,25.0
+Enterobacter kobei,amoxicillin-clavulanic acid,9,33.3,0.0,66.7
+Enterobacter kobei,ampicillin,9,33.3,0.0,66.7
+Enterobacter kobei,aztreonam,4,0.0,0.0,100.0
+Enterobacter kobei,cefalexin,3,100.0,0.0,0.0
+Enterobacter kobei,cefalotin,3,100.0,0.0,0.0
+Enterobacter kobei,cefazolin,6,0.0,0.0,100.0
+Enterobacter kobei,cefepime,19,26.3,0.0,73.7
+Enterobacter kobei,cefoperazone,3,0.0,0.0,100.0
+Enterobacter kobei,cefotaxime,15,6.7,0.0,93.3
+Enterobacter kobei,cefoxitin,11,27.3,0.0,72.7
+Enterobacter kobei,ceftazidime,21,4.8,0.0,95.2
+Enterobacter kobei,ceftiofur,3,0.0,0.0,100.0
+Enterobacter kobei,ceftolozane-tazobactam,4,25.0,0.0,75.0
+Enterobacter kobei,ceftriaxone,10,0.0,0.0,100.0
+Enterobacter kobei,ciprofloxacin,21,23.8,38.1,38.1
+Enterobacter kobei,doripenem,3,100.0,0.0,0.0
+Enterobacter kobei,enrofloxacin,3,0.0,0.0,100.0
+Enterobacter kobei,ertapenem,19,21.1,10.5,68.4
+Enterobacter kobei,florfenicol,3,0.0,33.3,66.7
+Enterobacter kobei,gentamicin,21,38.1,0.0,61.9
+Enterobacter kobei,imipenem,18,38.9,0.0,61.1
+Enterobacter kobei,levofloxacin,7,100.0,0.0,0.0
+Enterobacter kobei,marbofloxacin,3,0.0,0.0,100.0
+Enterobacter kobei,meropenem,21,52.4,14.3,33.3
+Enterobacter kobei,neomycin,3,0.0,0.0,100.0
+Enterobacter kobei,nitrofurantoin,3,0.0,33.3,66.7
+Enterobacter kobei,piperacillin-tazobactam,9,11.1,11.1,77.8
+Enterobacter kobei,polymyxin B,9,0.0,0.0,100.0
+Enterobacter kobei,tetracycline,6,66.7,0.0,33.3
+Enterobacter kobei,ticarcillin-clavulanic acid,3,0.0,0.0,100.0
+Enterobacter kobei,tigecycline,5,80.0,20.0,0.0
+Enterobacter kobei,tobramycin,6,83.3,0.0,16.7
+Enterobacter kobei,trimethoprim-sulfamethoxazole,10,50.0,0.0,50.0
+Enterobacter ludwigii,amikacin,6,100.0,0.0,0.0
+Enterobacter ludwigii,amoxicillin-clavulanic acid,6,0.0,0.0,100.0
+Enterobacter ludwigii,cefepime,6,100.0,0.0,0.0
+Enterobacter ludwigii,cefoxitin,6,0.0,0.0,100.0
+Enterobacter ludwigii,ceftazidime,6,33.3,0.0,66.7
+Enterobacter ludwigii,ceftriaxone,6,16.7,16.7,66.7
+Enterobacter ludwigii,ciprofloxacin,6,100.0,0.0,0.0
+Enterobacter ludwigii,ertapenem,6,66.7,16.7,16.7
+Enterobacter ludwigii,gentamicin,6,100.0,0.0,0.0
+Enterobacter ludwigii,levofloxacin,6,100.0,0.0,0.0
+Enterobacter ludwigii,meropenem,6,83.3,0.0,16.7
+Enterobacter ludwigii,nitrofurantoin,3,33.3,66.7,0.0
+Enterobacter ludwigii,piperacillin-tazobactam,6,33.3,16.7,50.0
+Enterobacter ludwigii,tetracycline,6,83.3,0.0,16.7
+Enterobacter ludwigii,tobramycin,6,100.0,0.0,0.0
+Enterobacter ludwigii,trimethoprim-sulfamethoxazole,6,100.0,0.0,0.0
+Enterobacter mori,ciprofloxacin,3,100.0,0.0,0.0
+Enterobacter mori,trimethoprim-sulfamethoxazole,3,100.0,0.0,0.0
+Enterobacter roggenkampii,amikacin,14,85.7,0.0,14.3
+Enterobacter roggenkampii,amoxicillin-clavulanic acid,23,4.3,0.0,95.7
+Enterobacter roggenkampii,ampicillin,19,10.5,0.0,89.5
+Enterobacter roggenkampii,ampicillin-sulbactam,3,0.0,0.0,100.0
+Enterobacter roggenkampii,azithromycin,8,100.0,0.0,0.0
+Enterobacter roggenkampii,aztreonam,3,0.0,0.0,100.0
+Enterobacter roggenkampii,cefazolin,12,0.0,0.0,100.0
+Enterobacter roggenkampii,cefepime,20,85.0,5.0,10.0
+Enterobacter roggenkampii,cefotaxime,11,0.0,0.0,100.0
+Enterobacter roggenkampii,cefoxitin,24,4.2,0.0,95.8
+Enterobacter roggenkampii,cefpodoxime,9,0.0,0.0,100.0
+Enterobacter roggenkampii,ceftazidime,22,9.1,4.5,86.4
+Enterobacter roggenkampii,ceftolozane-tazobactam,3,0.0,0.0,100.0
+Enterobacter roggenkampii,ceftriaxone,25,8.0,0.0,92.0
+Enterobacter roggenkampii,cephalothin,9,11.1,0.0,88.9
+Enterobacter roggenkampii,chloramphenicol,12,100.0,0.0,0.0
+Enterobacter roggenkampii,ciprofloxacin,26,80.8,3.8,15.4
+Enterobacter roggenkampii,colistin,4,0.0,25.0,75.0
+Enterobacter roggenkampii,ertapenem,9,33.3,11.1,55.6
+Enterobacter roggenkampii,gentamicin,26,92.3,0.0,7.7
+Enterobacter roggenkampii,imipenem,16,62.5,25.0,12.5
+Enterobacter roggenkampii,levofloxacin,11,63.6,18.2,18.2
+Enterobacter roggenkampii,meropenem,28,92.9,0.0,7.1
+Enterobacter roggenkampii,nalidixic acid,12,100.0,0.0,0.0
+Enterobacter roggenkampii,nitrofurantoin,3,33.3,33.3,33.3
+Enterobacter roggenkampii,piperacillin-tazobactam,18,5.6,38.9,55.6
+Enterobacter roggenkampii,streptomycin,9,77.8,0.0,22.2
+Enterobacter roggenkampii,sulfisoxazole,12,66.7,25.0,8.3
+Enterobacter roggenkampii,tetracycline,21,95.2,0.0,4.8
+Enterobacter roggenkampii,tigecycline,3,100.0,0.0,0.0
+Enterobacter roggenkampii,tobramycin,9,100.0,0.0,0.0
+Enterobacter roggenkampii,trimethoprim-sulfamethoxazole,25,84.0,0.0,16.0
+Enterococcus faecalis,amikacin,4,75.0,0.0,25.0
+Enterococcus faecalis,amoxicillin-clavulanic acid,5,100.0,0.0,0.0
+Enterococcus faecalis,ampicillin,40,90.0,2.5,7.5
+Enterococcus faecalis,cefepime,4,75.0,0.0,25.0
+Enterococcus faecalis,cefoxitin,3,100.0,0.0,0.0
+Enterococcus faecalis,ceftazidime,3,100.0,0.0,0.0
+Enterococcus faecalis,ceftriaxone,7,42.9,0.0,57.1
+Enterococcus faecalis,chloramphenicol,19,36.8,10.5,52.6
+Enterococcus faecalis,ciprofloxacin,89,85.4,2.2,12.4
+Enterococcus faecalis,daptomycin,34,67.6,20.6,11.8
+Enterococcus faecalis,delafloxacin,10,50.0,0.0,50.0
+Enterococcus faecalis,doxycycline,30,53.3,20.0,26.7
+Enterococcus faecalis,ertapenem,3,100.0,0.0,0.0
+Enterococcus faecalis,erythromycin,10,10.0,20.0,70.0
+Enterococcus faecalis,gentamicin,13,53.8,0.0,46.2
+Enterococcus faecalis,levofloxacin,109,84.4,0.0,15.6
+Enterococcus faecalis,linezolid,38,92.1,0.0,7.9
+Enterococcus faecalis,meropenem,4,100.0,0.0,0.0
+Enterococcus faecalis,neomycin,3,0.0,0.0,100.0
+Enterococcus faecalis,nitrofurantoin,6,83.3,0.0,16.7
+Enterococcus faecalis,penicillin,28,96.4,0.0,3.6
+Enterococcus faecalis,piperacillin-tazobactam,3,100.0,0.0,0.0
+Enterococcus faecalis,quinupristin-dalfopristin,13,0.0,7.7,92.3
+Enterococcus faecalis,rifampin,27,25.9,63.0,11.1
+Enterococcus faecalis,streptomycin,11,45.5,0.0,54.5
+Enterococcus faecalis,teicoplanin,28,89.3,0.0,10.7
+Enterococcus faecalis,tetracycline,92,31.5,0.0,68.5
+Enterococcus faecalis,tigecycline,4,100.0,0.0,0.0
+Enterococcus faecalis,tobramycin,4,75.0,0.0,25.0
+Enterococcus faecalis,trimethoprim-sulfamethoxazole,6,50.0,16.7,33.3
+Enterococcus faecalis,vancomycin,115,86.1,0.9,13.0
+Enterococcus faecium,ampicillin,54,22.2,0.0,77.8
+Enterococcus faecium,chloramphenicol,11,63.6,18.2,18.2
+Enterococcus faecium,ciprofloxacin,31,25.8,3.2,71.0
+Enterococcus faecium,clindamycin,4,25.0,0.0,75.0
+Enterococcus faecium,daptomycin,38,60.5,26.3,13.2
+Enterococcus faecium,doxycycline,33,33.3,9.1,57.6
+Enterococcus faecium,erythromycin,18,0.0,16.7,83.3
+Enterococcus faecium,gentamicin,13,84.6,0.0,15.4
+Enterococcus faecium,levofloxacin,47,25.5,10.6,63.8
+Enterococcus faecium,linezolid,38,86.8,10.5,2.6
+Enterococcus faecium,minocycline,4,100.0,0.0,0.0
+Enterococcus faecium,moxifloxacin,4,0.0,0.0,100.0
+Enterococcus faecium,nitrofurantoin,7,42.9,14.3,42.9
+Enterococcus faecium,oxacillin,4,0.0,0.0,100.0
+Enterococcus faecium,penicillin,20,10.0,0.0,90.0
+Enterococcus faecium,quinupristin-dalfopristin,16,87.5,0.0,12.5
+Enterococcus faecium,rifampin,22,22.7,0.0,77.3
+Enterococcus faecium,streptomycin,8,62.5,0.0,37.5
+Enterococcus faecium,teicoplanin,17,58.8,0.0,41.2
+Enterococcus faecium,tetracycline,34,44.1,0.0,55.9
+Enterococcus faecium,tigecycline,5,40.0,0.0,60.0
+Enterococcus faecium,trimethoprim-sulfamethoxazole,5,40.0,0.0,60.0
+Enterococcus faecium,vancomycin,56,33.9,0.0,66.1
+Klebsiella oxytoca,amikacin,34,91.2,0.0,8.8
+Klebsiella oxytoca,amoxicillin-clavulanic acid,24,37.5,12.5,50.0
+Klebsiella oxytoca,ampicillin,29,3.4,0.0,96.6
+Klebsiella oxytoca,ampicillin-sulbactam,9,11.1,0.0,88.9
+Klebsiella oxytoca,aztreonam,6,16.7,16.7,66.7
+Klebsiella oxytoca,cefazolin,8,0.0,0.0,100.0
+Klebsiella oxytoca,cefepime,31,74.2,6.5,19.4
+Klebsiella oxytoca,cefotaxime,8,25.0,12.5,62.5
+Klebsiella oxytoca,cefoxitin,28,75.0,10.7,14.3
+Klebsiella oxytoca,ceftazidime,30,66.7,3.3,30.0
+Klebsiella oxytoca,ceftazidime-avibactam,4,75.0,0.0,25.0
+Klebsiella oxytoca,ceftolozane-tazobactam,4,50.0,25.0,25.0
+Klebsiella oxytoca,ceftriaxone,30,20.0,0.0,80.0
+Klebsiella oxytoca,ciprofloxacin,31,67.7,9.7,22.6
+Klebsiella oxytoca,colistin,3,66.7,33.3,0.0
+Klebsiella oxytoca,daptomycin,3,100.0,0.0,0.0
+Klebsiella oxytoca,doripenem,8,37.5,62.5,0.0
+Klebsiella oxytoca,doxycycline,4,25.0,0.0,75.0
+Klebsiella oxytoca,ertapenem,29,79.3,3.4,17.2
+Klebsiella oxytoca,gentamicin,35,62.9,2.9,34.3
+Klebsiella oxytoca,imipenem,9,55.6,33.3,11.1
+Klebsiella oxytoca,levofloxacin,26,73.1,7.7,19.2
+Klebsiella oxytoca,linezolid,3,66.7,33.3,0.0
+Klebsiella oxytoca,meropenem,34,76.5,8.8,14.7
+Klebsiella oxytoca,minocycline,3,100.0,0.0,0.0
+Klebsiella oxytoca,nitrofurantoin,11,81.8,9.1,9.1
+Klebsiella oxytoca,piperacillin-tazobactam,29,37.9,3.4,58.6
+Klebsiella oxytoca,tetracycline,27,55.6,14.8,29.6
+Klebsiella oxytoca,tigecycline,9,100.0,0.0,0.0
+Klebsiella oxytoca,tobramycin,29,65.5,6.9,27.6
+Klebsiella oxytoca,trimethoprim-sulfamethoxazole,37,59.5,0.0,40.5
+Klebsiella oxytoca,vancomycin,3,100.0,0.0,0.0
+Klebsiella pneumoniae,amikacin,1329,64.7,9.8,25.5
+Klebsiella pneumoniae,amoxicillin,102,0.0,0.0,100.0
+Klebsiella pneumoniae,amoxicillin-clavulanic acid,1184,54.6,5.2,40.2
+Klebsiella pneumoniae,ampicillin,1103,25.6,0.2,74.3
+Klebsiella pneumoniae,ampicillin-sulbactam,433,25.9,3.0,71.1
+Klebsiella pneumoniae,azithromycin,7,14.3,0.0,85.7
+Klebsiella pneumoniae,aztreonam,700,21.6,2.6,75.9
+Klebsiella pneumoniae,carbenicillin,4,75.0,0.0,25.0
+Klebsiella pneumoniae,cefalexin,268,92.9,0.0,7.1
+Klebsiella pneumoniae,cefalotin,264,94.3,0.4,5.3
+Klebsiella pneumoniae,cefazolin,657,9.0,1.5,89.5
+Klebsiella pneumoniae,cefepime,1298,49.2,4.5,46.3
+Klebsiella pneumoniae,cefiderocol,8,87.5,0.0,12.5
+Klebsiella pneumoniae,cefoperazone,264,93.6,0.0,6.4
+Klebsiella pneumoniae,cefotaxime,1021,33.2,1.4,65.4
+Klebsiella pneumoniae,cefotaxime-clavulanic acid,31,9.7,3.2,87.1
+Klebsiella pneumoniae,cefotetan,106,80.2,3.8,16.0
+Klebsiella pneumoniae,cefoxitin,1087,45.0,6.8,48.2
+Klebsiella pneumoniae,cefpodoxime,99,37.4,0.0,62.6
+Klebsiella pneumoniae,ceftaroline,11,45.5,0.0,54.5
+Klebsiella pneumoniae,ceftazidime,2042,48.0,2.4,49.6
+Klebsiella pneumoniae,ceftazidime-avibactam,290,71.4,0.0,28.6
+Klebsiella pneumoniae,ceftazidime-clavulanic acid,4,0.0,0.0,100.0
+Klebsiella pneumoniae,ceftiofur,265,94.0,0.4,5.7
+Klebsiella pneumoniae,ceftolozane-tazobactam,359,64.1,1.1,34.8
+Klebsiella pneumoniae,ceftriaxone,1643,41.3,2.6,56.2
+Klebsiella pneumoniae,cefuroxime,120,27.5,3.3,69.2
+Klebsiella pneumoniae,cephalexin,3,0.0,0.0,100.0
+Klebsiella pneumoniae,cephalothin,129,38.0,3.9,58.1
+Klebsiella pneumoniae,chloramphenicol,102,63.7,3.9,32.4
+Klebsiella pneumoniae,ciprofloxacin,1430,44.0,4.3,51.7
+Klebsiella pneumoniae,clindamycin,5,60.0,0.0,40.0
+Klebsiella pneumoniae,colistin,274,59.1,9.5,31.4
+Klebsiella pneumoniae,daptomycin,13,84.6,0.0,15.4
+Klebsiella pneumoniae,delafloxacin,5,20.0,0.0,80.0
+Klebsiella pneumoniae,doripenem,452,25.4,7.7,66.8
+Klebsiella pneumoniae,doxycycline,81,39.5,33.3,27.2
+Klebsiella pneumoniae,enrofloxacin,267,78.3,11.6,10.1
+Klebsiella pneumoniae,ertapenem,1315,51.5,1.2,47.3
+Klebsiella pneumoniae,erythromycin,19,5.3,21.1,73.7
+Klebsiella pneumoniae,florfenicol,264,71.6,23.1,5.3
+Klebsiella pneumoniae,fosfomycin,40,60.0,2.5,37.5
+Klebsiella pneumoniae,gentamicin,1348,50.4,3.4,46.2
+Klebsiella pneumoniae,imipenem,1166,41.9,9.7,48.4
+Klebsiella pneumoniae,imipenem-relebactam,5,20.0,0.0,80.0
+Klebsiella pneumoniae,levofloxacin,934,35.5,12.2,52.2
+Klebsiella pneumoniae,linezolid,19,89.5,0.0,10.5
+Klebsiella pneumoniae,marbofloxacin,267,76.8,1.5,21.7
+Klebsiella pneumoniae,meropenem,1426,51.5,4.8,43.7
+Klebsiella pneumoniae,meropenem-vaborbactam,38,73.7,0.0,26.3
+Klebsiella pneumoniae,minocycline,161,49.7,26.1,24.2
+Klebsiella pneumoniae,moxifloxacin,109,56.0,5.5,38.5
+Klebsiella pneumoniae,nalidixic acid,123,61.0,0.0,39.0
+Klebsiella pneumoniae,neomycin,264,16.3,12.9,70.8
+Klebsiella pneumoniae,netilmicin,9,55.6,11.1,33.3
+Klebsiella pneumoniae,nitrofurantoin,395,19.5,23.5,57.0
+Klebsiella pneumoniae,norfloxacin,3,0.0,0.0,100.0
+Klebsiella pneumoniae,omadacycline,3,66.7,0.0,33.3
+Klebsiella pneumoniae,orbifloxacin,3,0.0,0.0,100.0
+Klebsiella pneumoniae,oxacillin,8,25.0,0.0,75.0
+Klebsiella pneumoniae,piperacillin,55,10.9,0.0,89.1
+Klebsiella pneumoniae,piperacillin-tazobactam,1662,49.2,7.6,43.2
+Klebsiella pneumoniae,plazomicin,17,35.3,5.9,58.8
+Klebsiella pneumoniae,polymyxin,5,100.0,0.0,0.0
+Klebsiella pneumoniae,polymyxin B,419,65.2,0.5,34.4
+Klebsiella pneumoniae,rifampin,6,66.7,0.0,33.3
+Klebsiella pneumoniae,streptomycin,3,33.3,0.0,66.7
+Klebsiella pneumoniae,sulbactam,3,0.0,0.0,100.0
+Klebsiella pneumoniae,sulfamethoxazole,14,21.4,7.1,71.4
+Klebsiella pneumoniae,sulfisoxazole,21,14.3,76.2,9.5
+Klebsiella pneumoniae,tetracycline,736,43.3,10.3,46.3
+Klebsiella pneumoniae,ticarcillin-clavulanic acid,325,73.8,3.7,22.5
+Klebsiella pneumoniae,tigecycline,687,73.8,13.1,13.1
+Klebsiella pneumoniae,tobramycin,1028,41.7,9.0,49.2
+Klebsiella pneumoniae,trimethoprim,9,33.3,0.0,66.7
+Klebsiella pneumoniae,trimethoprim-sulfamethoxazole,1327,44.5,0.7,54.8
+Klebsiella pneumoniae,vancomycin,18,66.7,0.0,33.3
+Kluyvera_intermedia,amoxicillin-clavulanic acid,3,66.7,0.0,33.3
+Kluyvera_intermedia,ampicillin,3,0.0,0.0,100.0
+Kluyvera_intermedia,cefoxitin,3,66.7,0.0,33.3
+Kluyvera_intermedia,ceftriaxone,3,33.3,0.0,66.7
+Kluyvera_intermedia,ciprofloxacin,3,66.7,33.3,0.0
+Kluyvera_intermedia,gentamicin,3,66.7,33.3,0.0
+Kluyvera_intermedia,meropenem,3,66.7,0.0,33.3
+Kluyvera_intermedia,tetracycline,3,66.7,0.0,33.3
+Kluyvera_intermedia,trimethoprim-sulfamethoxazole,3,100.0,0.0,0.0
+Listeria monocytogenes,ampicillin,31,100.0,0.0,0.0
+Listeria monocytogenes,penicillin,32,100.0,0.0,0.0
+Morganella morganii,amikacin,18,100.0,0.0,0.0
+Morganella morganii,amoxicillin-clavulanic acid,16,12.5,6.2,81.2
+Morganella morganii,ampicillin,18,5.6,0.0,94.4
+Morganella morganii,ampicillin-sulbactam,6,0.0,0.0,100.0
+Morganella morganii,aztreonam,6,50.0,0.0,50.0
+Morganella morganii,cefazolin,10,20.0,0.0,80.0
+Morganella morganii,cefepime,15,80.0,0.0,20.0
+Morganella morganii,cefotaxime,4,25.0,0.0,75.0
+Morganella morganii,cefoxitin,15,26.7,26.7,46.7
+Morganella morganii,ceftazidime,17,29.4,0.0,70.6
+Morganella morganii,ceftriaxone,18,27.8,0.0,72.2
+Morganella morganii,ciprofloxacin,29,48.3,0.0,51.7
+Morganella morganii,doripenem,3,0.0,0.0,100.0
+Morganella morganii,ertapenem,17,82.4,0.0,17.6
+Morganella morganii,gentamicin,18,77.8,0.0,22.2
+Morganella morganii,imipenem,5,0.0,0.0,100.0
+Morganella morganii,levofloxacin,28,46.4,7.1,46.4
+Morganella morganii,meropenem,16,75.0,0.0,25.0
+Morganella morganii,nitrofurantoin,6,0.0,0.0,100.0
+Morganella morganii,piperacillin-tazobactam,16,56.2,0.0,43.8
+Morganella morganii,tetracycline,16,37.5,0.0,62.5
+Morganella morganii,tigecycline,4,50.0,0.0,50.0
+Morganella morganii,tobramycin,18,88.9,0.0,11.1
+Morganella morganii,trimethoprim-sulfamethoxazole,29,41.4,0.0,58.6
+Mycobacterium tuberculosis,capreomycin,24,4.2,79.2,16.7
+Mycobacterium tuberculosis,ciprofloxacin,24,54.2,25.0,20.8
+Mycobacterium tuberculosis,clarithromycin,24,45.8,54.2,0.0
+Mycobacterium tuberculosis,cycloserine,11,100.0,0.0,0.0
+Mycobacterium tuberculosis,ethambutol,1282,98.0,1.2,0.9
+Mycobacterium tuberculosis,ethionamide,24,16.7,66.7,16.7
+Mycobacterium tuberculosis,isoniazid,1277,97.8,0.2,2.0
+Mycobacterium tuberculosis,ofloxacin,24,58.3,20.8,20.8
+Mycobacterium tuberculosis,pyrazinamide,143,92.3,0.0,7.7
+Mycobacterium tuberculosis,rifampin,1277,97.2,0.5,2.3
+Mycobacterium tuberculosis,streptomycin,1277,94.8,0.1,5.2
+Neisseria gonorrhoeae,azithromycin,766,82.5,1.7,15.8
+Neisseria gonorrhoeae,benzylpenicillin,252,2.0,90.1,7.9
+Neisseria gonorrhoeae,cefepime,49,87.8,0.0,12.2
+Neisseria gonorrhoeae,cefixime,814,94.7,0.0,5.3
+Neisseria gonorrhoeae,cefotaxime,50,96.0,0.0,4.0
+Neisseria gonorrhoeae,cefoxitin,54,100.0,0.0,0.0
+Neisseria gonorrhoeae,ceftriaxone,839,97.6,0.1,2.3
+Neisseria gonorrhoeae,ciprofloxacin,817,30.7,5.5,63.8
+Neisseria gonorrhoeae,gentamicin,5,80.0,20.0,0.0
+Neisseria gonorrhoeae,penicillin,558,3.4,42.7,53.9
+Neisseria gonorrhoeae,spectinomycin,767,100.0,0.0,0.0
+Neisseria gonorrhoeae,tetracycline,810,11.5,38.8,49.8
+Pasteurella multocida,amoxicillin-clavulanic acid,57,100.0,0.0,0.0
+Pasteurella multocida,ampicillin,54,98.1,0.0,1.9
+Pasteurella multocida,cefazolin,57,100.0,0.0,0.0
+Pasteurella multocida,cefovecin,6,0.0,100.0,0.0
+Pasteurella multocida,ceftiofur,16,100.0,0.0,0.0
+Pasteurella multocida,chloramphenicol,53,100.0,0.0,0.0
+Pasteurella multocida,chlortetracycline,16,87.5,12.5,0.0
+Pasteurella multocida,danofloxacin,16,100.0,0.0,0.0
+Pasteurella multocida,doxycycline,57,91.2,0.0,8.8
+Pasteurella multocida,enrofloxacin,16,100.0,0.0,0.0
+Pasteurella multocida,florfenicol,16,87.5,0.0,12.5
+Pasteurella multocida,imipenem,57,100.0,0.0,0.0
+Pasteurella multocida,oxytetracycline,16,37.5,0.0,62.5
+Pasteurella multocida,penicillin,16,100.0,0.0,0.0
+Pasteurella multocida,pradofloxacin,7,100.0,0.0,0.0
+Pasteurella multocida,spectinomycin,16,25.0,75.0,0.0
+Pasteurella multocida,trimethoprim-sulfamethoxazole,57,100.0,0.0,0.0
+Pasteurella multocida,tulathromycin,16,81.2,0.0,18.8
+Pluralibacter gergoviae,amikacin,8,50.0,0.0,50.0
+Pluralibacter gergoviae,amoxicillin-clavulanic acid,8,25.0,0.0,75.0
+Pluralibacter gergoviae,cefepime,8,0.0,0.0,100.0
+Pluralibacter gergoviae,cefoxitin,8,0.0,0.0,100.0
+Pluralibacter gergoviae,ceftazidime,8,25.0,0.0,75.0
+Pluralibacter gergoviae,ceftriaxone,8,0.0,0.0,100.0
+Pluralibacter gergoviae,ciprofloxacin,8,0.0,12.5,87.5
+Pluralibacter gergoviae,ertapenem,8,12.5,0.0,87.5
+Pluralibacter gergoviae,gentamicin,8,37.5,12.5,50.0
+Pluralibacter gergoviae,levofloxacin,8,0.0,37.5,62.5
+Pluralibacter gergoviae,meropenem,8,25.0,0.0,75.0
+Pluralibacter gergoviae,nitrofurantoin,3,100.0,0.0,0.0
+Pluralibacter gergoviae,piperacillin-tazobactam,7,0.0,0.0,100.0
+Pluralibacter gergoviae,tetracycline,8,50.0,0.0,50.0
+Pluralibacter gergoviae,tobramycin,8,37.5,12.5,50.0
+Pluralibacter gergoviae,trimethoprim-sulfamethoxazole,8,50.0,0.0,50.0
+Providencia alcalifaciens,amikacin,40,77.5,7.5,15.0
+Providencia alcalifaciens,amoxicillin-clavulanic acid,22,45.5,9.1,45.5
+Providencia alcalifaciens,ampicillin,80,53.8,0.0,46.2
+Providencia alcalifaciens,ampicillin-sulbactam,60,70.0,8.3,21.7
+Providencia alcalifaciens,aztreonam,24,58.3,4.2,37.5
+Providencia alcalifaciens,cefalexin,3,66.7,0.0,33.3
+Providencia alcalifaciens,cefalotin,3,66.7,0.0,33.3
+Providencia alcalifaciens,cefazolin,23,13.0,0.0,87.0
+Providencia alcalifaciens,cefepime,35,71.4,5.7,22.9
+Providencia alcalifaciens,cefiderocol,3,66.7,0.0,33.3
+Providencia alcalifaciens,cefoperazone,3,66.7,0.0,33.3
+Providencia alcalifaciens,cefotaxime,18,38.9,5.6,55.6
+Providencia alcalifaciens,cefoxitin,35,54.3,8.6,37.1
+Providencia alcalifaciens,ceftazidime,38,60.5,5.3,34.2
+Providencia alcalifaciens,ceftazidime-avibactam,9,77.8,0.0,22.2
+Providencia alcalifaciens,ceftiofur,3,33.3,0.0,66.7
+Providencia alcalifaciens,ceftolozane-tazobactam,12,41.7,0.0,58.3
+Providencia alcalifaciens,ceftriaxone,36,38.9,0.0,61.1
+Providencia alcalifaciens,ciprofloxacin,82,46.3,3.7,50.0
+Providencia alcalifaciens,colistin,6,0.0,0.0,100.0
+Providencia alcalifaciens,doripenem,14,42.9,14.3,42.9
+Providencia alcalifaciens,enrofloxacin,3,66.7,0.0,33.3
+Providencia alcalifaciens,ertapenem,35,48.6,5.7,45.7
+Providencia alcalifaciens,florfenicol,3,33.3,0.0,66.7
+Providencia alcalifaciens,gentamicin,39,46.2,17.9,35.9
+Providencia alcalifaciens,imipenem,23,13.0,26.1,60.9
+Providencia alcalifaciens,levofloxacin,76,47.4,6.6,46.1
+Providencia alcalifaciens,marbofloxacin,3,66.7,0.0,33.3
+Providencia alcalifaciens,meropenem,39,56.4,5.1,38.5
+Providencia alcalifaciens,meropenem-vaborbactam,3,66.7,0.0,33.3
+Providencia alcalifaciens,minocycline,9,11.1,0.0,88.9
+Providencia alcalifaciens,neomycin,3,33.3,0.0,66.7
+Providencia alcalifaciens,nitrofurantoin,13,15.4,0.0,84.6
+Providencia alcalifaciens,piperacillin-tazobactam,37,67.6,2.7,29.7
+Providencia alcalifaciens,plazomicin,7,14.3,14.3,71.4
+Providencia alcalifaciens,tetracycline,32,6.2,0.0,93.8
+Providencia alcalifaciens,ticarcillin-clavulanic acid,3,0.0,0.0,100.0
+Providencia alcalifaciens,tigecycline,19,31.6,21.1,47.4
+Providencia alcalifaciens,tobramycin,37,51.4,2.7,45.9
+Providencia alcalifaciens,trimethoprim-sulfamethoxazole,82,53.7,0.0,46.3
+Pseudomonas aeruginosa,amikacin,724,73.8,6.4,19.9
+Pseudomonas aeruginosa,amoxicillin,8,0.0,0.0,100.0
+Pseudomonas aeruginosa,amoxicillin-clavulanic acid,6,16.7,0.0,83.3
+Pseudomonas aeruginosa,ampicillin,13,0.0,0.0,100.0
+Pseudomonas aeruginosa,ampicillin-sulbactam,3,0.0,0.0,100.0
+Pseudomonas aeruginosa,azithromycin,9,55.6,11.1,33.3
+Pseudomonas aeruginosa,aztreonam,345,34.2,14.5,51.3
+Pseudomonas aeruginosa,carbenicillin,8,50.0,12.5,37.5
+Pseudomonas aeruginosa,cefamandole,3,0.0,0.0,100.0
+Pseudomonas aeruginosa,cefazolin,49,0.0,0.0,100.0
+Pseudomonas aeruginosa,cefepime,638,41.5,14.7,43.7
+Pseudomonas aeruginosa,cefiderocol,10,80.0,10.0,10.0
+Pseudomonas aeruginosa,cefoperazone,6,50.0,0.0,50.0
+Pseudomonas aeruginosa,cefotaxime,3,0.0,0.0,100.0
+Pseudomonas aeruginosa,ceftazidime,678,45.4,14.3,40.3
+Pseudomonas aeruginosa,ceftazidime-avibactam,120,38.3,0.8,60.8
+Pseudomonas aeruginosa,ceftiofur,64,98.4,1.6,0.0
+Pseudomonas aeruginosa,ceftolozane-tazobactam,130,55.4,3.8,40.8
+Pseudomonas aeruginosa,ceftriaxone,64,6.2,4.7,89.1
+Pseudomonas aeruginosa,chloramphenicol,4,25.0,0.0,75.0
+Pseudomonas aeruginosa,ciprofloxacin,832,35.6,4.9,59.5
+Pseudomonas aeruginosa,clindamycin,7,14.3,0.0,85.7
+Pseudomonas aeruginosa,colistin,248,90.3,3.6,6.0
+Pseudomonas aeruginosa,delafloxacin,14,28.6,0.0,71.4
+Pseudomonas aeruginosa,doripenem,115,30.4,7.8,61.7
+Pseudomonas aeruginosa,enrofloxacin,63,73.0,11.1,15.9
+Pseudomonas aeruginosa,ertapenem,3,66.7,0.0,33.3
+Pseudomonas aeruginosa,erythromycin,11,9.1,9.1,81.8
+Pseudomonas aeruginosa,gentamicin,736,44.6,4.1,51.4
+Pseudomonas aeruginosa,imipenem,569,23.2,10.4,66.4
+Pseudomonas aeruginosa,imipenem-relebactam,15,6.7,0.0,93.3
+Pseudomonas aeruginosa,levofloxacin,544,32.2,5.9,61.9
+Pseudomonas aeruginosa,marbofloxacin,64,65.6,6.2,28.1
+Pseudomonas aeruginosa,meropenem,530,34.3,9.2,56.4
+Pseudomonas aeruginosa,meropenem-vaborbactam,3,0.0,0.0,100.0
+Pseudomonas aeruginosa,moxifloxacin,4,25.0,25.0,50.0
+Pseudomonas aeruginosa,nitrofurantoin,3,0.0,0.0,100.0
+Pseudomonas aeruginosa,norfloxacin,3,66.7,0.0,33.3
+Pseudomonas aeruginosa,oxacillin,9,11.1,0.0,88.9
+Pseudomonas aeruginosa,piperacillin,26,26.9,7.7,65.4
+Pseudomonas aeruginosa,piperacillin-tazobactam,532,39.8,19.4,40.8
+Pseudomonas aeruginosa,polymyxin B,197,60.9,0.5,38.6
+Pseudomonas aeruginosa,streptomycin,3,33.3,0.0,66.7
+Pseudomonas aeruginosa,tetracycline,5,40.0,0.0,60.0
+Pseudomonas aeruginosa,ticarcillin-clavulanic acid,72,72.2,0.0,27.8
+Pseudomonas aeruginosa,tigecycline,5,20.0,0.0,80.0
+Pseudomonas aeruginosa,tobramycin,638,41.2,2.2,56.6
+Pseudomonas aeruginosa,trimethoprim-sulfamethoxazole,8,25.0,0.0,75.0
+Pseudomonas aeruginosa,vancomycin,3,66.7,0.0,33.3
+Salmonella enterica,amikacin,2989,99.7,0.0,0.2
+Salmonella enterica,amoxicillin,4,0.0,0.0,100.0
+Salmonella enterica,amoxicillin-clavulanic acid,9610,83.9,6.7,9.4
+Salmonella enterica,ampicillin,9862,74.4,0.0,25.6
+Salmonella enterica,ampicillin-sulbactam,8,25.0,0.0,75.0
+Salmonella enterica,azithromycin,7036,99.4,0.0,0.6
+Salmonella enterica,aztreonam,5,40.0,0.0,60.0
+Salmonella enterica,cefalotin,4,0.0,0.0,100.0
+Salmonella enterica,cefazolin,10,20.0,0.0,80.0
+Salmonella enterica,cefepime,10,70.0,0.0,30.0
+Salmonella enterica,cefotaxime,96,91.7,1.0,7.3
+Salmonella enterica,cefoxitin,9620,90.5,1.1,8.4
+Salmonella enterica,ceftazidime,251,78.9,0.0,21.1
+Salmonella enterica,ceftiofur,4853,85.1,0.2,14.7
+Salmonella enterica,ceftriaxone,9629,87.1,0.1,12.8
+Salmonella enterica,chloramphenicol,9853,92.4,1.0,6.6
+Salmonella enterica,ciprofloxacin,9859,89.5,1.3,9.2
+Salmonella enterica,colistin,1075,8.2,91.4,0.4
+Salmonella enterica,doripenem,6,83.3,0.0,16.7
+Salmonella enterica,ertapenem,11,90.9,0.0,9.1
+Salmonella enterica,gentamicin,9853,86.7,3.6,9.7
+Salmonella enterica,imipenem,162,99.4,0.0,0.6
+Salmonella enterica,kanamycin,3884,87.0,0.7,12.3
+Salmonella enterica,levofloxacin,10,80.0,10.0,10.0
+Salmonella enterica,meropenem,4843,100.0,0.0,0.0
+Salmonella enterica,minocycline,3,66.7,0.0,33.3
+Salmonella enterica,nalidixic acid,9688,91.3,0.0,8.7
+Salmonella enterica,nitrofurantoin,5,80.0,20.0,0.0
+Salmonella enterica,piperacillin,3,66.7,0.0,33.3
+Salmonella enterica,piperacillin-tazobactam,7,42.9,0.0,57.1
+Salmonella enterica,polymyxin B,3,100.0,0.0,0.0
+Salmonella enterica,streptomycin,8755,62.0,0.0,38.0
+Salmonella enterica,sulfamethoxazole,432,78.9,0.0,21.1
+Salmonella enterica,sulfisoxazole,9257,70.3,0.0,29.7
+Salmonella enterica,sulfonamide,4,0.0,0.0,100.0
+Salmonella enterica,tetracycline,9851,49.0,0.4,50.6
+Salmonella enterica,ticarcillin,4,0.0,0.0,100.0
+Salmonella enterica,tigecycline,90,100.0,0.0,0.0
+Salmonella enterica,tobramycin,10,40.0,0.0,60.0
+Salmonella enterica,trimethoprim,82,98.8,0.0,1.2
+Salmonella enterica,trimethoprim-sulfamethoxazole,9631,96.5,0.0,3.5
+Serratia marcescens,amikacin,63,73.0,1.6,25.4
+Serratia marcescens,amoxicillin-clavulanic acid,54,38.9,0.0,61.1
+Serratia marcescens,ampicillin,40,47.5,0.0,52.5
+Serratia marcescens,ampicillin-sulbactam,18,5.6,0.0,94.4
+Serratia marcescens,aztreonam,20,35.0,0.0,65.0
+Serratia marcescens,cefalexin,17,100.0,0.0,0.0
+Serratia marcescens,cefalotin,17,100.0,0.0,0.0
+Serratia marcescens,cefazolin,20,0.0,0.0,100.0
+Serratia marcescens,cefepime,63,77.8,7.9,14.3
+Serratia marcescens,cefoperazone,17,76.5,11.8,11.8
+Serratia marcescens,cefotaxime,18,72.2,0.0,27.8
+Serratia marcescens,cefoxitin,41,53.7,7.3,39.0
+Serratia marcescens,ceftazidime,63,74.6,3.2,22.2
+Serratia marcescens,ceftazidime-avibactam,4,100.0,0.0,0.0
+Serratia marcescens,ceftiofur,17,88.2,0.0,11.8
+Serratia marcescens,ceftolozane-tazobactam,19,57.9,0.0,42.1
+Serratia marcescens,ceftriaxone,65,69.2,1.5,29.2
+Serratia marcescens,chloramphenicol,7,14.3,57.1,28.6
+Serratia marcescens,ciprofloxacin,65,73.8,4.6,21.5
+Serratia marcescens,colistin,7,0.0,0.0,100.0
+Serratia marcescens,doripenem,12,75.0,0.0,25.0
+Serratia marcescens,enrofloxacin,17,52.9,29.4,17.6
+Serratia marcescens,ertapenem,57,68.4,0.0,31.6
+Serratia marcescens,erythromycin,3,33.3,33.3,33.3
+Serratia marcescens,florfenicol,17,58.8,41.2,0.0
+Serratia marcescens,gentamicin,65,64.6,4.6,30.8
+Serratia marcescens,imipenem,37,45.9,5.4,48.6
+Serratia marcescens,levofloxacin,46,80.4,4.3,15.2
+Serratia marcescens,linezolid,3,100.0,0.0,0.0
+Serratia marcescens,marbofloxacin,17,35.3,23.5,41.2
+Serratia marcescens,meropenem,62,64.5,1.6,33.9
+Serratia marcescens,minocycline,8,87.5,0.0,12.5
+Serratia marcescens,neomycin,17,0.0,5.9,94.1
+Serratia marcescens,nitrofurantoin,4,25.0,0.0,75.0
+Serratia marcescens,piperacillin-tazobactam,41,73.2,7.3,19.5
+Serratia marcescens,polymyxin B,7,14.3,0.0,85.7
+Serratia marcescens,tetracycline,47,12.8,19.1,68.1
+Serratia marcescens,ticarcillin-clavulanic acid,17,88.2,0.0,11.8
+Serratia marcescens,tigecycline,19,94.7,5.3,0.0
+Serratia marcescens,tobramycin,47,68.1,8.5,23.4
+Serratia marcescens,trimethoprim-sulfamethoxazole,65,75.4,0.0,24.6
+Serratia marcescens,vancomycin,3,100.0,0.0,0.0
+Staphylococcus aureus,amikacin,14,85.7,0.0,14.3
+Staphylococcus aureus,amoxicillin,4,0.0,0.0,100.0
+Staphylococcus aureus,amoxicillin-clavulanic acid,10,70.0,0.0,30.0
+Staphylococcus aureus,ampicillin,6,0.0,0.0,100.0
+Staphylococcus aureus,ampicillin-sulbactam,13,53.8,0.0,46.2
+Staphylococcus aureus,azithromycin,3,66.7,33.3,0.0
+Staphylococcus aureus,carbenicillin,3,66.7,33.3,0.0
+Staphylococcus aureus,cefazolin,13,69.2,0.0,30.8
+Staphylococcus aureus,cefoxitin,137,21.2,0.0,78.8
+Staphylococcus aureus,ceftaroline,297,91.2,0.0,8.8
+Staphylococcus aureus,ceftriaxone,14,71.4,0.0,28.6
+Staphylococcus aureus,chloramphenicol,12,91.7,8.3,0.0
+Staphylococcus aureus,ciprofloxacin,438,94.3,0.0,5.7
+Staphylococcus aureus,clindamycin,956,66.8,0.2,32.9
+Staphylococcus aureus,daptomycin,708,92.2,0.0,7.8
+Staphylococcus aureus,delafloxacin,16,43.8,0.0,56.2
+Staphylococcus aureus,doxycycline,128,71.9,6.2,21.9
+Staphylococcus aureus,erythromycin,969,52.2,0.9,46.9
+Staphylococcus aureus,fusidic acid,273,95.6,0.0,4.4
+Staphylococcus aureus,gentamicin,790,90.4,0.0,9.6
+Staphylococcus aureus,imipenem,9,100.0,0.0,0.0
+Staphylococcus aureus,levofloxacin,483,65.6,0.0,34.4
+Staphylococcus aureus,linezolid,723,95.4,0.0,4.6
+Staphylococcus aureus,meropenem,11,100.0,0.0,0.0
+Staphylococcus aureus,minocycline,157,100.0,0.0,0.0
+Staphylococcus aureus,moxifloxacin,158,94.3,2.5,3.2
+Staphylococcus aureus,mupirocin,298,82.2,0.0,17.8
+Staphylococcus aureus,nitrofurantoin,272,99.3,0.0,0.7
+Staphylococcus aureus,oxacillin,977,67.1,0.0,32.9
+Staphylococcus aureus,penicillin,475,10.5,0.0,89.5
+Staphylococcus aureus,quinupristin,4,100.0,0.0,0.0
+Staphylococcus aureus,rifampin,976,96.2,0.1,3.7
+Staphylococcus aureus,synercid,3,100.0,0.0,0.0
+Staphylococcus aureus,tedizolid,25,8.0,8.0,84.0
+Staphylococcus aureus,teicoplanin,271,99.6,0.0,0.4
+Staphylococcus aureus,tetracycline,763,88.7,0.1,11.1
+Staphylococcus aureus,tigecycline,154,100.0,0.0,0.0
+Staphylococcus aureus,tobramycin,5,80.0,0.0,20.0
+Staphylococcus aureus,trimethoprim,8,75.0,0.0,25.0
+Staphylococcus aureus,trimethoprim-sulfamethoxazole,909,93.2,0.0,6.8
+Staphylococcus aureus,vancomycin,902,96.7,0.6,2.8
+Staphylococcus pseudintermedius,chloramphenicol,5,60.0,0.0,40.0
+Staphylococcus pseudintermedius,ciprofloxacin,5,60.0,0.0,40.0
+Staphylococcus pseudintermedius,clindamycin,5,20.0,0.0,80.0
+Staphylococcus pseudintermedius,doxycycline,5,20.0,80.0,0.0
+Staphylococcus pseudintermedius,enrofloxacin,5,60.0,0.0,40.0
+Staphylococcus pseudintermedius,erythromycin,5,20.0,0.0,80.0
+Staphylococcus pseudintermedius,gentamicin,5,60.0,0.0,40.0
+Staphylococcus pseudintermedius,mupirocin,5,100.0,0.0,0.0
+Staphylococcus pseudintermedius,oxacillin,5,40.0,0.0,60.0
+Staphylococcus pseudintermedius,trimethoprim-sulfamethoxazole,5,20.0,0.0,80.0
+Stenotrophomonas maltophilia,chloramphenicol,3,33.3,66.7,0.0
+Stenotrophomonas maltophilia,trimethoprim-sulfamethoxazole,28,10.7,71.4,17.9
+Streptococcus agalactiae,daptomycin,5,100.0,0.0,0.0
+Streptococcus agalactiae,levofloxacin,10,100.0,0.0,0.0
+Streptococcus agalactiae,linezolid,10,100.0,0.0,0.0
+Streptococcus agalactiae,moxifloxacin,5,100.0,0.0,0.0
+Streptococcus agalactiae,penicillin,5,100.0,0.0,0.0
+Streptococcus agalactiae,tetracycline,6,100.0,0.0,0.0
+Streptococcus agalactiae,tigecycline,5,100.0,0.0,0.0
+Streptococcus agalactiae,vancomycin,10,100.0,0.0,0.0
+Streptococcus pneumoniae,amoxicillin,167,92.8,4.8,2.4
+Streptococcus pneumoniae,benzylpenicillin,74,21.6,43.2,35.1
+Streptococcus pneumoniae,cefotaxime,166,98.2,1.8,0.0
+Streptococcus pneumoniae,ceftriaxone,241,85.9,12.0,2.1
+Streptococcus pneumoniae,cefuroxime,166,89.8,0.6,9.6
+Streptococcus pneumoniae,chloramphenicol,166,98.2,0.0,1.8
+Streptococcus pneumoniae,ciprofloxacin,166,100.0,0.0,0.0
+Streptococcus pneumoniae,clindamycin,303,96.0,0.3,3.6
+Streptococcus pneumoniae,erythromycin,304,71.7,0.3,28.0
+Streptococcus pneumoniae,levofloxacin,166,100.0,0.0,0.0
+Streptococcus pneumoniae,linezolid,166,100.0,0.0,0.0
+Streptococcus pneumoniae,meropenem,167,90.4,4.2,5.4
+Streptococcus pneumoniae,penicillin,303,97.7,1.3,1.0
+Streptococcus pneumoniae,rifampin,166,100.0,0.0,0.0
+Streptococcus pneumoniae,synercid,166,100.0,0.0,0.0
+Streptococcus pneumoniae,tetracycline,303,93.4,0.3,6.3
+Streptococcus pneumoniae,trimethoprim-sulfamethoxazole,303,82.2,13.5,4.3
+Streptococcus pneumoniae,vancomycin,240,100.0,0.0,0.0
+Streptococcus pyogenes,amoxicillin,27,100.0,0.0,0.0
+Streptococcus pyogenes,clindamycin,27,92.6,0.0,7.4
+Streptococcus pyogenes,erythromycin,27,92.6,0.0,7.4
+Streptococcus pyogenes,penicillin,27,100.0,0.0,0.0
+Vibrio metschnikovii,amoxicillin-clavulanic acid,3,100.0,0.0,0.0
+Vibrio metschnikovii,ampicillin,3,33.3,0.0,66.7
+Vibrio metschnikovii,cefoxitin,3,100.0,0.0,0.0
+Vibrio metschnikovii,ciprofloxacin,3,100.0,0.0,0.0
+Vibrio metschnikovii,gentamicin,3,100.0,0.0,0.0
+Vibrio metschnikovii,meropenem,3,100.0,0.0,0.0
+Vibrio metschnikovii,tetracycline,3,100.0,0.0,0.0
+Vibrio metschnikovii,trimethoprim-sulfamethoxazole,3,100.0,0.0,0.0
+Vibrio parahaemolyticus,amoxicillin-clavulanic acid,9,100.0,0.0,0.0
+Vibrio parahaemolyticus,ampicillin,9,33.3,0.0,66.7
+Vibrio parahaemolyticus,cefoxitin,9,100.0,0.0,0.0
+Vibrio parahaemolyticus,ciprofloxacin,9,100.0,0.0,0.0
+Vibrio parahaemolyticus,gentamicin,9,100.0,0.0,0.0
+Vibrio parahaemolyticus,meropenem,9,100.0,0.0,0.0
+Vibrio parahaemolyticus,tetracycline,9,77.8,0.0,22.2
+Vibrio parahaemolyticus,trimethoprim-sulfamethoxazole,9,100.0,0.0,0.0
