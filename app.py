@@ -909,7 +909,7 @@ def main():
         page_title="Bugs & Drugs — Antimicrobial Stewardship",
         layout="wide",
         initial_sidebar_state="expanded",
-        page_icon="💊",
+        page_icon="Rx",
     )
 
     # ── Global CSS ─────────────────────────────────────────────────────────
@@ -922,14 +922,23 @@ def main():
       .main-banner p  { color: #cce5ff; margin: 4px 0 0 0; font-size: 13px; }
       .metric-card { background: white; border-radius: 8px; padding: 12px 16px;
                      border-left: 4px solid #0d6efd; box-shadow: 0 1px 4px rgba(0,0,0,.08); }
+      .metric-card b { color: #1a3a5c !important; font-size: 1.4rem; }
+      .metric-card small { color: #333333 !important; font-size: 0.85rem; }
       div[data-testid="stTabs"] button { font-size: 14px !important; font-weight: 600; }
+      /* Ensure readable text in all Streamlit elements */
+      .stMarkdown, .stMarkdown p, .stMarkdown li, .stMarkdown span { color: #1a1a1a; }
+      [data-testid="stSidebar"] .stMarkdown, [data-testid="stSidebar"] .stMarkdown p { color: #e0e0e0; }
+      h1, h2, h3, h4, h5, h6 { color: #1a3a5c !important; }
+      [data-testid="stSidebar"] h1, [data-testid="stSidebar"] h2,
+      [data-testid="stSidebar"] h3, [data-testid="stSidebar"] h4 { color: #ffffff !important; }
+      .stCaption, [data-testid="stCaptionContainer"] { color: #555555 !important; }
     </style>
     """, unsafe_allow_html=True)
 
     # ── Header banner ────────────────────────────────────────────────────────
     st.markdown("""
     <div class="main-banner">
-      <h2>🦠 Bugs &amp; Drugs — Antimicrobial Stewardship Tool</h2>
+      <h2>Bugs &amp; Drugs — Antimicrobial Stewardship Tool</h2>
       <p>US Clinical Practice Reference &nbsp;·&nbsp; Bacteria &nbsp;·&nbsp; Fungi &nbsp;·&nbsp; Viruses &nbsp;·&nbsp; MDR Organisms &nbsp;·&nbsp; AMR Database</p>
     </div>
     """, unsafe_allow_html=True)
@@ -946,15 +955,16 @@ def main():
         amr_loaded = os.path.exists("data/amr_microorganisms.csv")
         amr_label = "AMR DB Connected" if amr_loaded else "AMR DB: Run setup script"
         color = "#0d6efd" if amr_loaded else "#dc3545"
-        st.markdown(f'<div class="metric-card" style="border-left-color:{color};"><b>{"✓" if amr_loaded else "!"}</b><br><small>{amr_label}</small></div>', unsafe_allow_html=True)
+        status_icon = "OK" if amr_loaded else "--"
+        st.markdown(f'<div class="metric-card" style="border-left-color:{color};"><b>{status_icon}</b><br><small>{amr_label}</small></div>', unsafe_allow_html=True)
 
     st.markdown("")
 
     # ── Tabs ─────────────────────────────────────────────────────────────────
     tab1, tab2, tab3 = st.tabs([
-        "🔬  Sensitivity Grid",
-        "💊  Treatment Details",
-        "🔍  Organism Search (AMR DB)",
+        "Sensitivity Grid",
+        "Treatment Details",
+        "Organism Search (AMR DB)",
     ])
 
     # ══════════════════════════════════════════════════════════════════════
@@ -980,14 +990,14 @@ def main():
             )
 
         with col_c:
-            org_search = st.text_input("🔍 Search Organism", placeholder="e.g. Pseudomonas, MRSA, Candida", key="grid_search")
+            org_search = st.text_input("Search Organism", placeholder="e.g. Pseudomonas, MRSA, Candida", key="grid_search")
 
         # Legend
         st.markdown(render_legend(), unsafe_allow_html=True)
 
         # Notes banner
         st.info(
-            "⚠️ **Important caveats:**  \n"
+            "**Important caveats:**  \n"
             "**CI** = use only in combination | "
             "Tigecycline: use only if no other option (FDA warning) | "
             "Daptomycin: do NOT use for pneumonia | "
@@ -1007,7 +1017,7 @@ def main():
 
         # Key clinical notes section
         st.divider()
-        with st.expander("📋 Key Clinical Notes & Special Circumstances", expanded=False):
+        with st.expander("Key Clinical Notes and Special Circumstances", expanded=False):
             cols_n = st.columns(2)
             with cols_n[0]:
                 st.markdown("""
@@ -1056,7 +1066,7 @@ def main():
             cat_sel     = st.selectbox("Pathogen Category", categories)
             morph_opts  = sorted(df_full["Gram / Morphology"].unique().tolist())
             morph_sel   = st.multiselect("Gram Stain / Morphology", morph_opts, default=[])
-            search_term = st.text_input("🔍 Search Organism",
+            search_term = st.text_input("Search Organism",
                 placeholder="e.g. Pseudomonas, Candida, Influenza")
 
             st.divider()
@@ -1098,16 +1108,16 @@ def main():
                         st.markdown(f"**Category:** {row['Category']}")
                         st.markdown(f"**Gram/Morphology:** {row['Gram / Morphology']}")
                         st.divider()
-                        st.markdown("#### 🟢 First-Line Therapy")
+                        st.markdown("#### First-Line Therapy")
                         st.info(f"**Agent:** {row['First-Line Therapy']}")
                         st.markdown(f"**US Dosing:** `{row['First-Line Dosing (US)']}`")
-                        st.markdown("#### 🟡 Alternative Therapy")
+                        st.markdown("#### Alternative Therapy")
                         st.warning(f"**Agent:** {row['Alternative Therapy']}")
                         st.markdown(f"**US Dosing:** `{row['Alternative Dosing']}`")
                     with c2:
                         eff_code = row.get("Efficacy_MDR","yellow")
-                        eff_emoji = {"green":"🟢","yellow":"🟡","red":"🔴"}.get(eff_code,"🟡")
-                        st.markdown(f"#### {eff_emoji} MDR / Salvage Therapy")
+                        eff_label = {"green":"[HIGH]","yellow":"[MODERATE]","red":"[LIMITED]"}.get(eff_code,"[MODERATE]")
+                        st.markdown(f"#### {eff_label} MDR / Salvage Therapy")
                         if eff_code == "red":
                             st.error(f"**Agent:** {row['MDR Therapy']}")
                         else:
@@ -1159,12 +1169,12 @@ def main():
             st.info("The AMR (for R) package provides 78,000+ taxonomic records, "
                     "clinical breakpoints (EUCAST & CLSI), and intrinsic resistance data.")
         else:
-            st.success(f"✓ AMR database loaded — {len(amr_orgs):,} taxonomic records")
+            st.success(f"AMR database loaded — {len(amr_orgs):,} taxonomic records")
 
             # Search controls
             search_col1, search_col2, search_col3 = st.columns([3, 2, 2])
             with search_col1:
-                amr_query = st.text_input("🔍 Search organism (name, genus, species, code)",
+                amr_query = st.text_input("Search organism (name, genus, species, code)",
                     placeholder="e.g. Escherichia coli, Staphylococcus, ESCCOL", key="amr_search")
             with search_col2:
                 kingdom_filter = st.selectbox("Kingdom", ["All"] +
